@@ -1,2 +1,2 @@
-# OPC Data Access & CentumVP DCS 
+# OPC Data Access & CentumVP DCS Introduction
 This is a tutorial of showing how to collect data from OPC server which can connect to DCS or PLC system.
