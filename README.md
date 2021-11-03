@@ -49,4 +49,10 @@ The main process to build a DCS solution is as following:
 3. Use ENG to develop user interface(UI) and download it to HIS operator station so that user can interact with DCS.
 4. Use OPC server to collect FCS data on behalf of client program. The data can be stored in SQL database for later processing.
 
-# 2. 
+# 2. Human Interface Station
+Let's take a look at what a DCS operator would see on their screen.
+<p align="center">
+<img src="/image/CENTUMVP-HMI.png" height="70%" width="70%"> 
+</p>  
+
+
