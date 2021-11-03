@@ -1,4 +1,4 @@
-# OPC Data Access & CentumVP DCS Introduction
+# OPC Data Access & Centum VP DCS Introduction
 This is a tutorial of showing how to collect data from OPC server which connected to Distributed Control System(DCS) or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS is often seen in energy, oil, gas, and chemica industries. The entire DCS solution can provide users to operate and monitor the manufacturing process in a remote office.
 
 # 1. Introduction <br />
