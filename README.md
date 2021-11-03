@@ -25,7 +25,7 @@ What is the role and relationship between each elements? Let's take a look at fo
     <tbody>
         <tr>
             <td align="center">Field Control Station (FCS)</td>
-            <td align="left">This is a small computer which can take analog or digital input/output and provide computing power. The communication between FCS and electronics or hardwares can be wired or wireless. FCS can be far away from the physical equipments and located in remote DCS office. </br> </br> In a large plant, you might have multiple FCS, each FCS will be assigned with an IP so that HIS, ENG, OPC can reach out to these FCS via network.</td>
+            <td align="left">This is a small computer which can take analog or digital input/output and provide computing power. The communication between FCS and electronics or hardwares (motor, transmitter, actuator, pump) can be wired or wireless. FCS can be far away from the physical equipments and located in remote DCS office. </br> </br> In a large plant, you might have multiple FCS, each FCS will be assigned with an IP so that HIS, ENG, OPC can reach out to these FCS via network.</td>
         </tr>
         <tr>
             <td align="center">Human Interface Station (HIS)</td>
@@ -43,5 +43,10 @@ What is the role and relationship between each elements? Let's take a look at fo
 </table>
 </p>
 
+The whole process to build a DCS solution is as following:
+1. Wire the electronics or hardwares to FCS.
+2. Use ENG to develop programs and logic and download to FCS so that FCS can process input and output signal.
+3. Use ENG to develop user interface(UI) and download to HIS operator station so that user can interact with DCS.
+4. Use OPC server to collect FCS data on behalf of client program.
 
 # 2. 
