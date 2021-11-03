@@ -52,7 +52,7 @@ The main process to build a DCS solution is as following:
 # 2. Human Interface Station
 Let's take a look at what a DCS operator would see on their screen.
 <p align="center">
-<img src="/image/CENTUMVP-HMI.png" height="70%" width="70%"> 
+<img src="/image/CENTUMVP-HMI.png" height="90%" width="90%"> 
 </p>  
 
 
