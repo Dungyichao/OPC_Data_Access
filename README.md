@@ -25,19 +25,19 @@ What is the role and relationship between each elements? Let's take a look at fo
     <tbody>
         <tr>
             <td align="center">Field Control Station (FCS)</td>
-            <td align="center">This is a small computer which can take analog or digital input/output and provide computing power. The communication between FCS and electronics or hardwares can be wired or wireless.</td>
+            <td align="left">This is a small computer which can take analog or digital input/output and provide computing power. The communication between FCS and electronics or hardwares can be wired or wireless.</td>
         </tr>
         <tr>
             <td align="center">Human Interface Station (HIS)</td>
-            <td align="center">DCS or remote office operators can monitor and take action on HIS to control DCS system. It includes some user interface, keyboard, and touchscreen.</td>
+            <td align="left">DCS or remote office operators can monitor and take action on HIS to control DCS system. It includes some user interface, keyboard, and touchscreen.</td>
         </tr>
         <tr>
               <td align="center">Engineering Station (ENG)</td>
-              <td align="center">Engineer, technichian, electrician, and developer can use this station to develop logic, program, user interface, chart, and so on. The program should be downloaded to FCS and HIS for functioning.</td>
+              <td align="left">Engineer, technichian, electrician, and developer can use this station to develop logic, program, user interface, chart, and so on. The program should be downloaded to FCS and HIS for functioning.</td>
         </tr>
         <tr>
               <td align="center">Open Platform Communications (OPC)</td>
-              <td align="center">OPC can be devided into server and client. Server will be the one to communicate with FCS, while client will be the one to ask server to communicate and then receive data in FCS. Client can then process these data. There are multiple vendor (such as Kepware, OPC Expert, Advosol) who can provide OPC server software and corresponding library for development.</td>
+              <td align="left">OPC can be devided into server and client. Server will be the one to communicate with FCS, while client will be the one to ask server to communicate and then receive data in FCS. Client can then process these data. There are multiple vendor (such as Kepware, OPC Expert, Advosol) who can provide OPC server software and corresponding library for development.</td>
         </tr>
     </tbody>
 </table>
