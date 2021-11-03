@@ -119,5 +119,5 @@ Let's first see a simple example. We have an equipment, car(tag name: CAR001). W
 <img src="/image/interprete_value_car.jpg" height="70%" width="70%"> 
 </p>  
 
-Likewise, on the HIS user interface, you can see tag name represents the equipment, PV indicating the current process variable of the equipment, 
+Likewise, on the HIS user interface, you can see tag name represents the equipment. PV indicating the current process variable of the equipment, 
 
