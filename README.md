@@ -53,7 +53,7 @@ The simplify process to build a DCS solution is as following:
 4. Use OPC server to collect FCS data on behalf of client program. The data can be stored in SQL database for later processing.
 
 # 2. What You See - Human Interface Station (HIS)
-Let's take a look at what a DCS operator would see on their screen on the HIS. You can see browser bar, graphics, some alarm, silo, piping, valve, pumps, and some values. The graph abstract the production process and equipments. The user interface program directly asks data from FCS or send command to the FCS therefore monitor and control the production process value. 
+Let's take a look at what a DCS operator would see on their screen on the HIS. You can see browser bar, graphics, some alarm, silo, piping, valve, pumps, and some values. The graph (piping and instrument diagram) abstract the production process (process flow diagram), equipments, control function, and process real time value. The user interface program directly asks data from FCS or send command to the FCS therefore monitor and control the production process value. 
 
 <p align="center">
 <img src="/image/CENTUMVP-HMI.png" height="90%" width="90%"> 
