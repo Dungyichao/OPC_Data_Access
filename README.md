@@ -47,6 +47,6 @@ The whole process to build a DCS solution is as following:
 1. Wire the electronics or hardwares to FCS.
 2. Use ENG to develop programs and logic and download to FCS so that FCS can process input and output signal.
 3. Use ENG to develop user interface(UI) and download to HIS operator station so that user can interact with DCS.
-4. Use OPC server to collect FCS data on behalf of client program.
+4. Use OPC server to collect FCS data on behalf of client program. The data can be stored in SQL database for later processing.
 
 # 2. 
