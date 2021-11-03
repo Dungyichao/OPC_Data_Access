@@ -112,7 +112,7 @@ In a production line, there are large amount of controller, devices and equipmen
 
 For example, we have 25 Temperature Indicater on the production line, we therefore name the first one as TIC001, and the second one as TIC002, .... and all the way to TIC025.
 
-## 2.2 Interprete Values
+## 2.2 Interprete Values on the Screen
 Let's first see a simple example. We have an equipment, car(tag name: CAR001). We want to have the car to run at 50 mph (<b>set point value, SV</b>) no matter on what kind of surrounding.  Car is stop at the begining without break. By pushing the gas pedal 50%, the real time car speed (<b>process variable, PV</b>) will gradually and quickly start from 0 MPH to 50 MPH, then we can mantain the car speed 50 mph on a flat road with gas pedal 30%. However, when the car encounter a hill, the car will become slower (PV will go down probably to 35 mph) if the gas pedal still at 30%. In order for the car to reach the set point value(SV, 50 mph) during the uphill, the loop control will take in charge and press more on the gas pedal (probably 60%) so that we can mantain the car speed to 50 mph.
 
 <p align="center">
