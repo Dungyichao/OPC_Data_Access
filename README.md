@@ -137,15 +137,15 @@ These abbrevation indicate control modes ([reference1](https://control.com/textb
     <tbody>
         <tr>
             <td align="center">Manual mode (MAN)</td>
-            <td align="center">also called "open-loop control" is where the control element (usually a control valve) is controlled by the operator (a human, usually). He manipulates the control valve and hopes that he can maintain the process at the required setpoint. Eventually he gets tired and switches it over to automatic mode.</td>
+            <td align="left">also called "open-loop control" is where the control element (usually a control valve) is controlled by the operator (a human, usually). He manipulates the control valve and hopes that he can maintain the process at the required setpoint. Eventually he gets tired and switches it over to automatic mode.</td>
         </tr>
         <tr>
             <td align="center">Automatic mode (AUT or AUTO)</td>
-            <td align="center">also called "closed-loop control" is where the control element is controlled by the controller (not a human, definitely). It checks the process, compares it to the setpoint and adjusts the control valve to bring the process back to the setpoint. The controller is usually much better at this than the human which is why some humans hate them.</td>
+            <td align="left">also called "closed-loop control" is where the control element is controlled by the controller (not a human, definitely). It checks the process, compares it to the setpoint and adjusts the control valve to bring the process back to the setpoint. The controller is usually much better at this than the human which is why some humans hate them.</td>
         </tr>
         <tr>
             <td align="center">Cascade control (CAS)</td>
-            <td align="center">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the setpoint being used by the slave.</td>
+            <td align="left">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the setpoint being used by the slave.</td>
         </tr>        
     </tbody>
 </table>
