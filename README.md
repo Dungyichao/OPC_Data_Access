@@ -1,5 +1,5 @@
 # OPC Data Access & CentumVP DCS Introduction
-This is a tutorial of showing how to collect data from OPC server which connected to DCS or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS is often seen in oil, gas, and chemica industries. The entire DCS solution can provide users to operate and monitor the manufacturing process in a remote office.
+This is a tutorial of showing how to collect data from OPC server which connected to DCS or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS is often seen in energy, oil, gas, and chemica industries. The entire DCS solution can provide users to operate and monitor the manufacturing process in a remote office.
 
 # 1. Introduction <br />
 Let's take a quick look of the system structure in the brochure from Yokogawa Centum VP ([link](https://web-material3.yokogawa.com/BU33J01A10-01EN.pdf)) to know how does DCS embedded in a factory. 
@@ -43,6 +43,7 @@ What is the role and relationship between each elements? Let's take a look at fo
 </table>
 </p>
 
+### 1.1 Build a DCS Solution
 The main process to build a DCS solution is as following:
 1. Wire the electronics or hardwares to FCS.
 2. Use ENG to develop programs and logic and download it to FCS so that FCS can process input and output signal.
@@ -50,7 +51,7 @@ The main process to build a DCS solution is as following:
 4. Use OPC server to collect FCS data on behalf of client program. The data can be stored in SQL database for later processing.
 
 # 2. Human Interface Station (HIS)
-Let's take a look at what a DCS operator would see on their screen on the HIS. You can see browser bar, graphics, some alarm, silo, piping, valve, pumps, and some values. The user interface program directly asks data from FCS or send command to the FCS therefore control the production process value. 
+Let's take a look at what a DCS operator would see on their screen on the HIS. You can see browser bar, graphics, some alarm, silo, piping, valve, pumps, and some values. The user interface program directly asks data from FCS or send command to the FCS therefore monitor and control the production process value. 
 <p align="center">
 <img src="/image/CENTUMVP-HMI.png" height="90%" width="90%"> 
 </p>  
