@@ -149,15 +149,15 @@ Likewise, on the HIS user interface, you can see tag name represents the equipme
     <tbody>
         <tr>
             <td align="center">Process Variable (PV)</td>
-            <td align="center">FT</td>
+            <td align="left">The current measured value of a particular part of a process.</td>
         </tr>
         <tr>
             <td align="center">Setpoint Value (SV)</td>
-            <td align="center">HV, FV</td>
+            <td align="left">The desired or target value for an essential variable, or process value of a system.</td>
         </tr>
         <tr>
             <td align="center">Manipulated Output Value (MV)</td>
-            <td align="center">The results of control computation processing performed by the control blocks are output as manipulated output values</td>
+            <td align="left">The results of control computation processing performed by the control blocks are output as manipulated output values.</td>
         </tr>        
     </tbody>
 </table>
