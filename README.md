@@ -45,9 +45,9 @@ What is the role and relationship between each elements? Let's take a look at fo
 
 | Element                                    | Detail   
 | -------------------------------------------|------------- 
-| Field Control Station </br>(FCS)           | This is a small computer which can take analog or digital input/output and provide computing power. </br>The communication between FCS and electronics or hardwares can be wired or wireless.  
-| Human Interface Station </br>(HIS)         | DCS or remote office operators can monitor and take action on HIS to control DCS system. It includes </br>some user interface, keyboard, and touchscreen.
-| Engineering Station </br>(ENG)             | Engineer, technichian, electrician, and developer can use this station to develop logic, program, user </br>interface, chart, and so on. The program should be downloaded to FCS and HIS for functioning.
-| Open Platform Communications </br>(OPC)    | OPC can be devided into server and client. Server will be the one to communicate with FCS, while client </br>will be the one to ask server to communicate and then receive data in FCS. Client can then process these data. There are multiple vendor (such as Kepware, OPC Expert, Advosol) who can provide OPC server software and corresponding library for development.    
+| Field Control Station </br>(FCS)           | This is a small computer which can take analog or digital input/output and </br>provide computing power. The communication between FCS and electronics or hardwares can be wired or wireless.  
+| Human Interface Station </br>(HIS)         | DCS or remote office operators can monitor and take action on HIS to control </br>DCS system. It includes some user interface, keyboard, and touchscreen.
+| Engineering Station </br>(ENG)             | Engineer, technichian, electrician, and developer can use this station to develop </br>logic, program, user interface, chart, and so on. The program should be downloaded to FCS and HIS for functioning.
+| Open Platform Communications </br>(OPC)    | OPC can be devided into server and client. Server will be the one to communicate </br>with FCS, while client will be the one to ask server to communicate and then receive data in FCS. Client can then process these data. There are multiple vendor (such as Kepware, OPC Expert, Advosol) who can provide OPC server software and corresponding library for development.    
 
 # 2. 
