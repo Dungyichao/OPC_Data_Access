@@ -58,7 +58,7 @@ Let's take a look at what a DCS operator would see on their screen on the HIS. Y
 <img src="/image/CENTUMVP-HMI.png" height="90%" width="90%"> 
 </p>  
 
-## 2.1 Tag Name
+## 2.1 Equipment Naming Practice
 In a production line, there are large amount of controller, devices and equipments. Usually, we will name each of them into tag name(some alphabet and numbers) which can make the user interface more clean and neat and better management. The nameing convention can be seen in the following ([Reference](https://www.controleng.com/articles/plc-tag-and-address-naming-conventions/))
 
 <p align="center">
@@ -102,7 +102,13 @@ In a production line, there are large amount of controller, devices and equipmen
             <td align="center">Pressure Transmitter</td>
             <td align="center">PT, PIT</td>
         </tr>
+        <tr>
+            <td align="center">Temperature Indicating Control</td>
+            <td align="center">TIC</td>
+        </tr>
     </tbody>
 </table>
 </p>
+
+For example, we have 25 Temperature Indicater on the production line, we therefore name the first one as TIC001, and the second one as TIC002, .... and so on.
 
