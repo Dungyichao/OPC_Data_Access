@@ -43,8 +43,8 @@ What is the role and relationship between each elements? Let's take a look at fo
 </table>
 </p>
 
-| Element      | Detail   
-| -------------|------------- 
+| Element                                    | Detail   
+| -------------------------------------------|------------- 
 | Field Control Station </br>(FCS)           | This is a small computer which can take analog or digital input/output and provide computing power. </br>The communication between FCS and electronics or hardwares can be wired or wireless.  
 | Human Interface Station </br>(HIS)         | DCS or remote office operators can monitor and take action on HIS to control DCS system. It includes </br>some user interface, keyboard, and touchscreen.
 | Engineering Station </br>(ENG)             | Engineer, technichian, electrician, and developer can use this station to develop logic, program, user </br>interface, chart, and so on. The program should be downloaded to FCS and HIS for functioning.
