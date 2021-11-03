@@ -2,7 +2,7 @@
 This is a tutorial of showing how to collect data from OPC server which connected to Distributed Control System(DCS) or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS is often seen in energy, oil, gas, and chemica industries. The entire DCS solution can provide users to operate and monitor the manufacturing process in a remote office.
 
 # 1. Introduction <br />
-Let's take a quick look of the system structure in the brochure from Yokogawa Centum VP ([link](https://web-material3.yokogawa.com/BU33J01A10-01EN.pdf)) to know how does DCS embedded in a factory. Yokogawa is an industry well known DCS solution pioneer originated in Japan since 1915. Other well known DCS solution provider such as Siemens, Honeywell, ABB, Rockwell, GE, Mitsubishi.
+Let's take a quick look of the system structure in the brochure from Yokogawa Centum VP ([link](https://web-material3.yokogawa.com/BU33J01A10-01EN.pdf),[PDF](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/CentumVP_Brochure_BU33J01A10-01EN.pdf)) to know how does DCS embedded in a factory. Yokogawa is an industry well known DCS solution pioneer originated in Japan since 1915. Other well known DCS solution provider such as Siemens, Honeywell, ABB, Rockwell, GE, Mitsubishi.
 <p align="center">
 <img src="/image/brochure_system_structure.JPG" height="90%" width="90%"> 
 </p>  
@@ -59,7 +59,7 @@ Let's take a look at what a DCS operator would see on their screen on the HIS. Y
 </p>  
 
 ## 2.1 Equipment Naming Practice
-In a production line, there are large amount of controller, devices and equipments. Usually, we will name each of them into tag name(some alphabet and numbers) which can make the user interface more clean and neat and better management. The nameing convention can be seen in the following ([Reference](https://www.controleng.com/articles/plc-tag-and-address-naming-conventions/))
+In a production line, there are large amount of controller, devices and equipments. Usually, we will name each of them into tag name(some alphabet and numbers) which can make the user interface more clean and neat and better management. The nameing convention can be seen in the following ([Reference](https://www.controleng.com/articles/plc-tag-and-address-naming-conventions/), [PDF](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Control%20Engineering%20_%20PLC%20tag%20and%20address%20naming%20conventions.pdf))
 
 <p align="center">
 <table>
