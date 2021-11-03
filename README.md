@@ -130,13 +130,38 @@ For example, we have 25 Temperature Indicater on the production line, we therefo
 
 ## 2.2 Interprete Values on the Screen
 ### 2.2.1 PV, SV, MV
-Let's first see a simple example. We have an equipment, car(tag name: CAR001). We want to have the car to run at 50 mph (<b>set point value, SV</b>) no matter on what kind of surrounding.  Car is stop at the begining without break. By pushing the gas pedal 50%, the real time car speed (<b>process variable, PV</b>) will gradually and quickly start from 0 MPH to 50 MPH, then we can mantain the car speed 50 mph on a flat road with gas pedal 30%. However, when the car encounter a hill, the car will become slower (PV will go down probably to 35 mph) if the gas pedal still at 30%. In order for the car to reach the set point value(SV, 50 mph) during the uphill, the loop control will take in charge and press more on the gas pedal (probably 60%) so that we can mantain the car speed to 50 mph.
+Let's first see a simple example. We have an equipment, car(tag name: CAR001). We want to have the car to run at 50 mph (<b>setpoint value, SV</b>) no matter on what kind of surrounding.  Car is stop at the begining without break. By pushing the gas pedal 50%, the real time car speed (<b>process variable, PV</b>) will gradually and quickly start from 0 MPH to 50 MPH, then we can mantain the car speed 50 mph on a flat road with gas pedal 30%. However, when the car encounter a hill, the car will become slower (PV will go down probably to 35 mph) if the gas pedal still at 30%. In order for the car to reach the setpoint value(SV, 50 mph) during the uphill, the loop control will take in charge and press more on the gas pedal (probably 60%) so that we can mantain the car speed to 50 mph.
 
 <p align="center">
 <img src="/image/interprete_value_car.jpg" height="70%" width="70%"> 
 </p>  
 
-Likewise, on the HIS user interface, you can see tag name represents the equipment. PV indicating the current process variable of the equipment, and the SV indicating the set value from the user. For the car example, the whole tag name for the process variable will become CAR001.PV and the set value will be CAR001.SV. You might also see MV which represent manipulated output value. You can think of MV as the effort for FCS to make PV close to SV, for example 30% or 50% on the gas pedal.
+Likewise, on the HIS user interface, you can see tag name represents the equipment. PV indicating the current process variable of the equipment, and the SV indicating the setpoint value from the user. For the car example, the whole tag name for the process variable will become CAR001.PV and the setpoint value will be CAR001.SV. You might also see MV which represent manipulated output value. You can think of MV as the effort for FCS to make PV close to SV, for example 30% or 50% on the gas pedal.
+
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Value Type</th>
+            <th align="center">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Process Variable (PV)</td>
+            <td align="center">FT</td>
+        </tr>
+        <tr>
+            <td align="center">Setpoint Value (SV)</td>
+            <td align="center">HV, FV</td>
+        </tr>
+        <tr>
+            <td align="center">Manipulated Output Value (MV)</td>
+            <td align="center">The results of control computation processing performed by the control blocks are output as manipulated output values</td>
+        </tr>        
+    </tbody>
+</table>
+</p>
 
 ### 2.2.2 AUT, MAN, CAS
 These abbrevation indicate control modes ([Reference_2_2_1](https://control.com/textbook/basic-process-control-strategies/cascade-control/#:~:text=Automatic%20mode%3A%20Controller%20automatically%20adjusts,try%20to%20keep%20PV%20%3D%20SP.&text=Cascade%20mode%3A%20Controller%20automatically%20adjusts,by%20primary%20(master)%20controller), [PDF](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_2_2_1_CH34_Cascade%20Control%20_%20Basic%20Process%20Control%20Strategies%20and%20Control%20System%20Configurations%20_%20Automation%20Textbook.pdf)), ([Reference_2_2_2](https://cr4.globalspec.com/thread/15328/Automatic-Manual-and-Cascade-Control-Mode), [PDF](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_2_2_2__Automatic%2C%20Manual%2C%20and%20Cascade%20Control%20Mode%20-%20CR4%20Discussion%20Thread.pdf))
@@ -156,11 +181,11 @@ These abbrevation indicate control modes ([Reference_2_2_1](https://control.com/
         </tr>
         <tr>
             <td align="center">Automatic mode (AUT or AUTO)</td>
-            <td align="left">also called "closed-loop control" is where the control element is controlled by the controller (not a human, definitely). It checks the process, compares it to the setpoint and adjusts the control valve to bring the process back to the setpoint. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Set point value set “locally” by human operator.</td>
+            <td align="left">also called "closed-loop control" is where the control element is controlled by the controller (not a human, definitely). It checks the process, compares it to the setpoint and adjusts the control valve to bring the process back to the setpoint. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Setpoint value set “locally” by human operator.</td>
         </tr>
         <tr>
             <td align="center">Cascade mode (CAS)</td>
-            <td align="left">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the set point being used by the slave. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Set point value set “remotely” by primary (master) controller.
+            <td align="left">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the setpoint being used by the slave. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Setpoint value set “remotely” by primary (master) controller.
             <p align="center">
                 <img src="/image/cascade_mode_block.JPG" height="50%" width="50%"> 
             </p> 
