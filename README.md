@@ -51,7 +51,7 @@ The simplify process to build a DCS solution is as following:
 3. Use ENG to develop user interface(UI) and download it to HIS operator station so that user can interact with DCS.
 4. Use OPC server to collect FCS data on behalf of client program. The data can be stored in SQL database for later processing.
 
-# 2. Human Interface Station (HIS)
+# 2. What You See - Human Interface Station (HIS)
 Let's take a look at what a DCS operator would see on their screen on the HIS. You can see browser bar, graphics, some alarm, silo, piping, valve, pumps, and some values. The graph abstract the production process and equipments. The user interface program directly asks data from FCS or send command to the FCS therefore monitor and control the production process value. 
 
 <p align="center">
@@ -123,4 +123,12 @@ Let's first see a simple example. We have an equipment, car(tag name: CAR001). W
 Likewise, on the HIS user interface, you can see tag name represents the equipment. PV indicating the current process variable of the equipment, and the SV indicating the set value from the user. For the car example, the whole tag name for the process variable will become CAR001.PV and the set value will be CAR001.SV. You might also see MV which represent maneuver value. You can think of MV as the effort for FCS to make PV close to SV, for example 30% or 50% on the gas pedal.
 
 ### 2.2.2 AUTO, MAN, CAS
+
+
+# 3. How You Think - Engineering Station (ENG)
+
+
+# 4. How You Collect - OPC Data Access
+
+
 
