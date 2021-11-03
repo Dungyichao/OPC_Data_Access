@@ -1,0 +1,8 @@
+https://www.youtube.com/watch?v=BIW77bzX3i0
+
+PUMP1_FB: FB means feed back
+PUMP1_CTL: CTL  means control
+VLV002_OP: OP means open feedback
+SIO-21: swtich 2 input 1 output
+FT: flow transmitter
+LT: level transmitter
