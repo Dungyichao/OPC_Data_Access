@@ -1,5 +1,5 @@
-# OPC Data Access & Centum VP DCS Introduction
-This is a tutorial of showing how to collect data from OPC server which connected to Distributed Control System(DCS) or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS is often seen in energy, oil, gas, and chemica industries. The entire DCS solution can provide users to operate and monitor the manufacturing process in a remote office.
+# Centum VP DCS Introduction & OPC Data Access 
+This is a tutorial of showing how to collect data from OPC server which connected to Distributed Control System(DCS) or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS solution is often seen in energy, oil, gas, and chemica industries. The entire DCS solution can provide users to operate and monitor the manufacturing process in a remote office.
 
 # Table of Contents
 1. [Introduction](https://github.com/Dungyichao/OPC_Data_Access#1-introduction-)
@@ -196,7 +196,9 @@ These abbrevation indicate control modes ([Reference_2_2_1](https://control.com/
 </p>
 
 # 3. How You Think - Engineering Station (ENG)
-
+We will discuss the technical side and design logic of the DCS in this section. 
+## 3.1 Basic User Interface Introduction (video)
+Please go the the following Youtube link: [Introduction to FCS Programming with 'Plant in a Box'](https://www.youtube.com/watch?v=BIW77bzX3i0)
 
 # 4. How You Collect - OPC Data Access
 
