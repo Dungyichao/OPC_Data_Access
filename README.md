@@ -37,16 +37,16 @@ What is the role and relationship between each elements? Let's take a look at fo
         </tr>
         <tr>
               <td align="center">Open Platform Communications (OPC)</td>
-              <td align="left">OPC can be devided into server and client. Server will be the one to communicate with FCS, while client will be the one to ask server to communicate and then receive data in FCS. Client can then process these data. There are multiple vendor (such as Kepware, OPC Expert, Advosol) who can provide OPC server software and corresponding library for development. </br> </br>These vendors should provide industry standard, so the program you developed should be able to run on different OPC server with a little twist. For example, the program I developed on Kepserver (Kepware) to collect data can also run on Yokogawa's EXAOPC server when appyling vendor's library.</td>
+              <td align="left">OPC can be devided into server and client. Server will be the one to communicate with FCS, while client will be the one to ask server to communicate and then receive data in FCS. Client can then process these data. There are multiple vendor (such as Kepware, OPC Expert, Advosol) who can provide OPC server software and corresponding library for development. </br> </br>These vendors should provide industry standard, so the program you developed should be able to run on different OPC server with a little twist. For example, the program I developed on Kepserver (Kepware) to collect data can also run on Yokogawa's EXAOPC server when appyling vendor's library. You can use VB or .NET to develop client program.</td>
         </tr>
     </tbody>
 </table>
 </p>
 
-The whole process to build a DCS solution is as following:
+The main process to build a DCS solution is as following:
 1. Wire the electronics or hardwares to FCS.
-2. Use ENG to develop programs and logic and download to FCS so that FCS can process input and output signal.
-3. Use ENG to develop user interface(UI) and download to HIS operator station so that user can interact with DCS.
+2. Use ENG to develop programs and logic and download it to FCS so that FCS can process input and output signal.
+3. Use ENG to develop user interface(UI) and download it to HIS operator station so that user can interact with DCS.
 4. Use OPC server to collect FCS data on behalf of client program. The data can be stored in SQL database for later processing.
 
 # 2. 
