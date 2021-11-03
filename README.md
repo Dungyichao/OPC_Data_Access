@@ -113,6 +113,9 @@ In a production line, there are large amount of controller, devices and equipmen
 For example, we have 25 Temperature Indicater on the production line, we therefore name the first one as TIC001, and the second one as TIC002, .... and all the way to TIC025.
 
 ## 2.2 Interprete Values
-
+Let's first see a simple example
+<p align="center">
+<img src="/image/interprete_value_car.jpg" height="70%" width="70%"> 
+</p>  
 
 
