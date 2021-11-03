@@ -113,7 +113,7 @@ In a production line, there are large amount of controller, devices and equipmen
 For example, we have 25 Temperature Indicater on the production line, we therefore name the first one as TIC001, and the second one as TIC002, .... and all the way to TIC025.
 
 ## 2.2 Interprete Values
-Let's first see a simple example
+Let's first see a simple example. We have an equipment call car. We want to have the car to run at 50 mph (set point value, <b>SV</b>) no matter on what kind of surrounding.  Car is stop at the begining without break. By pushing the gas pedal 50%(, the real time car speed (process variable, <b>PV</b>) will gradually and quickly start from 0 MPH to 50 MPH, then we can mantain the car speed 50 mph on a flat road with gas pedal 30%. 
 <p align="center">
 <img src="/image/interprete_value_car.jpg" height="70%" width="70%"> 
 </p>  
