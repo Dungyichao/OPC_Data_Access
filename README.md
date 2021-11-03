@@ -145,7 +145,11 @@ These abbrevation indicate control modes ([Reference_2_2_1](https://control.com/
         </tr>
         <tr>
             <td align="center">Cascade mode (CAS)</td>
-            <td align="left">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the set point being used by the slave. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Set point value set “remotely” by primary (master) controller.</td>
+            <td align="left">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the set point being used by the slave. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Set point value set “remotely” by primary (master) controller.
+            <p align="center">
+                <img src="/image/cascade_mode_block.JPG" height="90%" width="90%"> 
+            </p> 
+            </td>
         </tr>        
     </tbody>
 </table>
