@@ -45,7 +45,7 @@ What is the role and relationship between each elements? Let's take a look at fo
 </p>
 
 ## 1.2 Build a DCS Solution
-The main process to build a DCS solution is as following:
+The simplify process to build a DCS solution is as following:
 1. Wire the electronics or hardwares from the field or production line into FCS.
 2. Use ENG to develop programs and logic and download it to FCS so that FCS can process input and output signal.
 3. Use ENG to develop user interface(UI) and download it to HIS operator station so that user can interact with DCS.
