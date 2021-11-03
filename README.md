@@ -1,6 +1,17 @@
 # OPC Data Access & Centum VP DCS Introduction
 This is a tutorial of showing how to collect data from OPC server which connected to Distributed Control System(DCS) or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS is often seen in energy, oil, gas, and chemica industries. The entire DCS solution can provide users to operate and monitor the manufacturing process in a remote office.
 
+# Table of Content
+1. [Introduction](https://github.com/Dungyichao/OPC_Data_Access#1-introduction-)
+	* 1.1 [Elements in DCS Solution](https://github.com/Dungyichao/OPC_Data_Access#11-elements-in-dcs-solution)
+	* 1.2 [Build a DCS Solution](https://github.com/Dungyichao/OPC_Data_Access#12-build-a-dcs-solution)
+2. [What You See - Human Interface Station (HIS)](https://github.com/Dungyichao/OPC_Data_Access#2-what-you-see---human-interface-station-his)
+	* 2.1 [Equipment Naming Practice](https://github.com/Dungyichao/OPC_Data_Access#21-equipment-naming-practice)
+	* 2.2 [Interprete Values on the Screen](https://github.com/Dungyichao/OPC_Data_Access#22-interprete-values-on-the-screen)
+		* 2.2.1 [PV, SV, MV](https://github.com/Dungyichao/OPC_Data_Access#221-pv-sv-mv)
+	
+
+
 # 1. Introduction <br />
 Let's take a quick look of the system structure in the brochure from Yokogawa Centum VP ([link](https://web-material3.yokogawa.com/BU33J01A10-01EN.pdf),[PDF](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/CentumVP_Brochure_BU33J01A10-01EN.pdf)) to know how does DCS embedded in a factory. Yokogawa is an industry well known DCS solution pioneer originated in Japan since 1915. Other well known DCS solution provider such as Siemens, Honeywell, ABB, Rockwell, GE, Mitsubishi.
 <p align="center">
