@@ -141,11 +141,11 @@ These abbrevation indicate control modes ([reference1](https://control.com/textb
         </tr>
         <tr>
             <td align="center">Automatic mode (AUT or AUTO)</td>
-            <td align="left">also called "closed-loop control" is where the control element is controlled by the controller (not a human, definitely). It checks the process, compares it to the setpoint and adjusts the control valve to bring the process back to the setpoint. Controller automatically adjusts its output to try to keep PV = SP. Set point value set “locally” by human operator.</td>
+            <td align="left">also called "closed-loop control" is where the control element is controlled by the controller (not a human, definitely). It checks the process, compares it to the setpoint and adjusts the control valve to bring the process back to the setpoint. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Set point value set “locally” by human operator.</td>
         </tr>
         <tr>
             <td align="center">Cascade mode (CAS)</td>
-            <td align="left">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the setpoint being used by the slave. Controller automatically adjusts its output to try to keep PV = SP. Set point value set “remotely” by primary (master) controller.</td>
+            <td align="left">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the set point being used by the slave. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Set point value set “remotely” by primary (master) controller.</td>
         </tr>        
     </tbody>
 </table>
