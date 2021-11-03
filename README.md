@@ -56,5 +56,5 @@ Let's take a look at what a DCS operator would see on their screen on the HIS. Y
 <p align="center">
 <img src="/image/CENTUMVP-HMI.png" height="90%" width="90%"> 
 </p>  
-
+In a production line, there are large amount of devices and equipments. Usually, we will name each of them into some alphabet and numbers which can make the user interface more clean and neat and better management. 
 
