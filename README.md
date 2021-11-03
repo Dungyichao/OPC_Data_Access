@@ -53,8 +53,55 @@ The main process to build a DCS solution is as following:
 
 # 2. Human Interface Station (HIS)
 Let's take a look at what a DCS operator would see on their screen on the HIS. You can see browser bar, graphics, some alarm, silo, piping, valve, pumps, and some values. The user interface program directly asks data from FCS or send command to the FCS therefore monitor and control the production process value. 
+
 <p align="center">
 <img src="/image/CENTUMVP-HMI.png" height="90%" width="90%"> 
 </p>  
-In a production line, there are large amount of devices and equipments. Usually, we will name each of them into some alphabet and numbers which can make the user interface more clean and neat and better management. 
+
+In a production line, there are large amount of controller, devices and equipments. Usually, we will name each of them into tag name(some alphabet and numbers) which can make the user interface more clean and neat and better management. The nameing convention can be seen in the following
+
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Devices</th>
+            <th align="center">Alphabetic Abbreviation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Flow Transmitter</td>
+            <td align="center">FT</td>
+        </tr>
+        <tr>
+            <td align="center">Valve</td>
+            <td align="center">HV, FV</td>
+        </tr>
+        <tr>
+            <td align="center">Limit Switch</td>
+            <td align="center">LSL (Low), LSH (High)</td>
+        </tr>
+        <tr>
+            <td align="center">Loop Control</td>
+            <td align="center">FIC, PIC</td>
+        </tr>
+        <tr>
+            <td align="center">Pushbutton/Switch</td>
+            <td align="center">HS, HIS</td>
+        </tr>
+        <tr>
+            <td align="center">Photoeye, Proximity Switch</td>
+            <td align="center">ZS</td>
+        </tr>
+        <tr>
+            <td align="center">Motor Starter</td>
+            <td align="center">M</td>
+        </tr>
+        <tr>
+            <td align="center">Pressure Transmitter</td>
+            <td align="center">PT, PIT</td>
+        </tr>
+    </tbody>
+</table>
+</p>
 
