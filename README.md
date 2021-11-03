@@ -123,9 +123,33 @@ Let's first see a simple example. We have an equipment, car(tag name: CAR001). W
 
 Likewise, on the HIS user interface, you can see tag name represents the equipment. PV indicating the current process variable of the equipment, and the SV indicating the set value from the user. For the car example, the whole tag name for the process variable will become CAR001.PV and the set value will be CAR001.SV. You might also see MV which represent maneuver value. You can think of MV as the effort for FCS to make PV close to SV, for example 30% or 50% on the gas pedal.
 
-### 2.2.2 AUTO, MAN, CAS
+### 2.2.2 AUT, MAN, CAS
 These abbrevation indicate control modes ([reference1](https://control.com/textbook/basic-process-control-strategies/cascade-control/#:~:text=Automatic%20mode%3A%20Controller%20automatically%20adjusts,try%20to%20keep%20PV%20%3D%20SP.&text=Cascade%20mode%3A%20Controller%20automatically%20adjusts,by%20primary%20(master)%20controller), [reference2](https://cr4.globalspec.com/thread/15328/Automatic-Manual-and-Cascade-Control-Mode))
 
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Control Mode</th>
+            <th align="center">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Manual mode (MAN)</td>
+            <td align="center">also called "open-loop control" is where the control element (usually a control valve) is controlled by the operator (a human, usually). He manipulates the control valve and hopes that he can maintain the process at the required setpoint. Eventually he gets tired and switches it over to automatic mode.</td>
+        </tr>
+        <tr>
+            <td align="center">Automatic mode (AUT or AUTO)</td>
+            <td align="center">also called "closed-loop control" is where the control element is controlled by the controller (not a human, definitely). It checks the process, compares it to the setpoint and adjusts the control valve to bring the process back to the setpoint. The controller is usually much better at this than the human which is why some humans hate them.</td>
+        </tr>
+        <tr>
+            <td align="center">Cascade control (CAS)</td>
+            <td align="center">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the setpoint being used by the slave.</td>
+        </tr>        
+    </tbody>
+</table>
+</p>
 
 # 3. How You Think - Engineering Station (ENG)
 
