@@ -1,5 +1,5 @@
 # OPC Data Access & CentumVP DCS Introduction
-This is a tutorial of showing how to collect data from OPC server which connected to DCS or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS is often seen in oil, gas, and chemica industries. 
+This is a tutorial of showing how to collect data from OPC server which connected to DCS or PLC system. We also provide some reference tutorial to get your hands into Centum DCS. DCS is often seen in oil, gas, and chemica industries. The entire DCS solution can provide users to operate and monitor the manufacturing process in a remote office.
 
 # 1. Introduction <br />
 Let's take a quick look of the system structure in the brochure from Yokogawa Centum VP. 
@@ -25,7 +25,7 @@ What is the role and relationship between each elements? Let's take a look at fo
     <tbody>
         <tr>
             <td align="center">Field Control Station (FCS)</td>
-            <td align="left">This is a small computer which can take analog or digital input/output and provide computing power. The communication between FCS and electronics or hardwares can be wired or wireless.</td>
+            <td align="left">This is a small computer which can take analog or digital input/output and provide computing power. The communication between FCS and electronics or hardwares can be wired or wireless. FCS can be far away from the physical equipments and located in remote DCS office.</td>
         </tr>
         <tr>
             <td align="center">Human Interface Station (HIS)</td>
