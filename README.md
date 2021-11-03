@@ -12,6 +12,7 @@ We will only focus on HIS(Human Interface Station), ENG(Engineering Station) and
 <img src="/image/IT_system_structure.jpg" height="60%" width="60%"> 
 </p>  
 
+## 1.1 Elements in DCS Solution
 What is the role and relationship between each elements? Let's take a look at following table.
 
 <p align="center">
@@ -43,7 +44,7 @@ What is the role and relationship between each elements? Let's take a look at fo
 </table>
 </p>
 
-### 1.1 Build a DCS Solution
+## 1.2 Build a DCS Solution
 The main process to build a DCS solution is as following:
 1. Wire the electronics or hardwares to FCS.
 2. Use ENG to develop programs and logic and download it to FCS so that FCS can process input and output signal.
