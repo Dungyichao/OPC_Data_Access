@@ -206,8 +206,12 @@ These abbrevation indicate control modes ([Reference_2_2_1](https://control.com/
 
 # 3. Behind the Scenes - Engineering Station (ENG)
 We will discuss the technical side and design logic of the DCS in this section. 
+
 ## 3.1 Basic User Interface Introduction (video)
-Please go the the following Youtube link: [Introduction to FCS Programming with 'Plant in a Box'](https://www.youtube.com/watch?v=BIW77bzX3i0) to learn the basic usage of user interface and how to abstract the production process into HIS windows graph. The following link is the screenshot of the video of each step: [Video Screenshot folder](https://github.com/Dungyichao/OPC_Data_Access/tree/main/image/Youtube%20Tutorial).
+Please go the the following Youtube link: [Introduction to FCS Programming with 'Plant in a Box'](https://www.youtube.com/watch?v=BIW77bzX3i0) (1hr) to learn the basic usage of user interface and how to abstract the production process into HIS windows graph. The following link is the screenshot of the video of each step: [Video Screenshot folder](https://github.com/Dungyichao/OPC_Data_Access/tree/main/image/Youtube%20Tutorial).
+
+## 3.2 Design and Hardware Relationship
+
 
 # 4. How We Collect - OPC Data Access
 
