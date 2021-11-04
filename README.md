@@ -71,7 +71,7 @@ The simplify process to build a DCS solution is as following:
 4. Use OPC server to collect FCS data on behalf of client program. The data can be stored in SQL database for later processing.
 
 # 2. What You See - Human Interface Station (HIS)
-Let's take a look at what a DCS operator would see on their screen on the HIS. You can see browser bar, graphics, some alarm, silo, piping, valve, pumps, and some values. The graph (piping and instrument diagram) abstract the production process (process flow diagram), equipments, control function, and process real time value. The user interface program directly asks data from FCS or send command to the FCS therefore monitor and control the production process value. ([Reference_2_0_1](https://web-material3.yokogawa.com/TI33J01A11-01EN.pdf), [PDF](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_2_0_1_HMI%20Overview_TI33J01A11-01EN.pdf))
+Let's take a look at what a DCS operator would see on their screen on the HIS. You can see browser bar, graphics, some alarm, silo, piping, valve, pumps, and some values. The graphic (piping and instrument diagram) abstract the production process (process flow diagram), equipments, control function, and process real time value. The user interface program directly asks data from FCS or send command to the FCS therefore monitor and control the production process value. ([Reference_2_0_1](https://web-material3.yokogawa.com/TI33J01A11-01EN.pdf), [PDF](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_2_0_1_HMI%20Overview_TI33J01A11-01EN.pdf))
 
 <p align="center">
 <img src="/image/CENTUMVP-HMI.png" height="90%" width="90%"> 
@@ -132,7 +132,7 @@ In a production line, there are large amount of controller, devices and equipmen
 For example, we have 25 Temperature Indicater on the production line, we therefore name the first one as TIC001, and the second one as TIC002, .... and all the way to TIC025.
 
 ## 2.2 Interprete Values on the Screen
-We will now explain what shows on the below graph 
+We will now explain what shows on the below graphic 
 <p align="center">
 <img src="/image/faceplate_view_1.jpg" height="100%" width="100%"> 
 	Instrument Faceplate View
@@ -208,7 +208,7 @@ These abbrevation indicate control modes ([Reference_2_2_1](https://control.com/
 We will discuss the technical side and design logic of the DCS in this section. 
 
 ## 3.1 Basic User Interface Introduction (video)
-Please go the the following Youtube link: [Introduction to FCS Programming with 'Plant in a Box'](https://www.youtube.com/watch?v=BIW77bzX3i0) (1hr) to learn the basic usage of user interface and how to abstract the production process into HIS windows graph. The following link is the screenshot of the video of each step: [Video Screenshot folder](https://github.com/Dungyichao/OPC_Data_Access/tree/main/image/Youtube%20Tutorial).
+Please go the the following Youtube link: [Introduction to FCS Programming with 'Plant in a Box'](https://www.youtube.com/watch?v=BIW77bzX3i0) (1hr) to learn the basic usage of user interface and how to abstract the production process into HIS windows graphic. The following link is the screenshot of the video of each step: [Video Screenshot folder](https://github.com/Dungyichao/OPC_Data_Access/tree/main/image/Youtube%20Tutorial).
 
 ## 3.2 Design and Hardware Relationship
 
