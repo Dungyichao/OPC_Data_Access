@@ -134,7 +134,7 @@ For example, we have 25 Temperature Indicater on the production line, we therefo
 ## 2.2 Interprete Values on the Screen
 We will now explain what shows on the below graph 
 <p align="center">
-<img src="/image/faceplate_view.jpg" height="70%" width="70%"> 
+<img src="/image/faceplate_view.JPG" height="70%" width="70%"> 
 	Faceplate View
 </p> 
 
