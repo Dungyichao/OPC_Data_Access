@@ -145,7 +145,7 @@ Likewise, on the HIS user interface, you can see tag name represents the equipme
 <table>
     <thead>
         <tr>
-            <th align="center">Value Type</th>
+            <th align="center">Data Item Name</th>
             <th align="center">Detail</th>
         </tr>
     </thead>
