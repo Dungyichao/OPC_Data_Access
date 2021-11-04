@@ -40,9 +40,11 @@ What is the role and relationship between each elements? Let's take a look at fo
     </thead>
     <tbody>
         <tr>
-            <td align="center">Field Control Station (FCS)</td>
+            <td align="center">Field Control Station (FCS)  ([Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf), [PDF]())
+	    </td>
             <td align="left">This is a small computer which can take analog or digital input/output and provide computing power (like our PC take keyboard, mouse as input and output to monitor). The communication between FCS and electronics, transmitter(flow, temperature, pressure), or hardwares (motor, actuator, pump) can be wired or wireless. Each input/output will be mapped to a memory address which is important when developing logic and program on ENG. There are two types of input and output (I/O) functions: Process I/O exchanges data with field devices outside FCS; and software I/O is for virtual data exchange within the FCS. FCS can be far away from the physical equipments and located in remote DCS office. 
-    </br> </br> In a large plant, you might have multiple FCS, each FCS will be assigned with an IPv4 so that HIS, ENG, OPC can reach out to these FCS via network.</td>
+    </br> </br> In a large plant, you might have multiple FCS, each FCS will be assigned with an IPv4 so that HIS, ENG, OPC can reach out to these FCS via network. FCS is comprised of the following components: Field control unit(FCU), N-IO node, N-IO field enclosure, Node unit(NU), N-ESB bus/ESB bus/Optical ESB bus.
+    	    </td>
         </tr>
         <tr>
             <td align="center">Human Interface Station (HIS)</td>
