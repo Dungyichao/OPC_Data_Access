@@ -60,6 +60,7 @@ What is the role and relationship between each elements? Let's take a look at fo
     </tbody>
 </table>
 </p>
+
 FCS reference: [Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf), [PDF](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_1_1_1_FCS%20Overview_Integrated%20Production%20Control%20System%20CENTUM%20VPSystem%20Overview.pdf)
 
 ## 1.2 Build a DCS Solution
