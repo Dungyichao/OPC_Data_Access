@@ -10,7 +10,7 @@ This is a tutorial of showing how to collect data from OPC server which connecte
 	* 2.2 [Interprete Values on the Screen](https://github.com/Dungyichao/OPC_Data_Access#22-interprete-values-on-the-screen)
 		* 2.2.1 [PV, SV, MV](https://github.com/Dungyichao/OPC_Data_Access#221-pv-sv-mv)
 		* 2.2.2 [AUT, MAN, CAS](https://github.com/Dungyichao/OPC_Data_Access#222-aut-man-cas)
-3. [How You Think - Engineering Station (ENG)](https://github.com/Dungyichao/OPC_Data_Access#3-how-you-think---engineering-station-eng)
+3. [Behind the Scenes - Engineering Station (ENG)](https://github.com/Dungyichao/OPC_Data_Access#3-how-you-think---engineering-station-eng)
 	* 3.1 [Basic User Interface Introduction (video)](https://github.com/Dungyichao/OPC_Data_Access#31-basic-user-interface-introduction-video)
 	* 3.2 [Some topic]()
 	
@@ -198,7 +198,7 @@ These abbrevation indicate control modes ([Reference_2_2_1](https://control.com/
 </table>
 </p>
 
-# 3. How You Think - Engineering Station (ENG)
+# 3. Behind the Scenes - Engineering Station (ENG)
 We will discuss the technical side and design logic of the DCS in this section. 
 ## 3.1 Basic User Interface Introduction (video)
 Please go the the following Youtube link: [Introduction to FCS Programming with 'Plant in a Box'](https://www.youtube.com/watch?v=BIW77bzX3i0) to learn the basic usage of user interface and how to abstract the production process into HIS windows graph. The following link is the screenshot of the video of each step: [Video Screenshot folder](https://github.com/Dungyichao/OPC_Data_Access/tree/main/image/Youtube%20Tutorial).
