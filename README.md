@@ -135,7 +135,7 @@ For example, we have 25 Temperature Indicater on the production line, we therefo
 We will now explain what shows on the below graphic 
 <p align="center">
 <img src="/image/faceplate_view_1.jpg" height="100%" width="100%"> 
-	Instrument Faceplate View
+	Instrument Faceplate View (click to view larger image)
 </p> 
 
 ### 2.2.1 PV, SV, MV
