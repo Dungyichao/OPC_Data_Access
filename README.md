@@ -213,7 +213,7 @@ Please go the the following Youtube link: [Introduction to FCS Programming with 
 ## 3.2 Design and Hardware Relationship
 Take a look at the following system structure corresponding to physical hardware structure.
 <p align="center">
-<img src="/image/FCS design level.jpg" height="70%" width="70%"> 
+<img src="/image/FCS design level.jpg" height="100%" width="100%"> 
 </p>  
 
 # 4. How We Collect - OPC Data Access
