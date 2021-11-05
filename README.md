@@ -12,7 +12,7 @@ This is a tutorial of showing how to collect data from OPC server which connecte
 		* 2.2.2 [AUT, MAN, CAS](https://github.com/Dungyichao/OPC_Data_Access#222-aut-man-cas)
 3. [Behind the Scenes - Engineering Station (ENG)](https://github.com/Dungyichao/OPC_Data_Access/blob/main/README.md#3-behind-the-scenes---engineering-station-eng)
 	* 3.1 [Basic User Interface Introduction (video)](https://github.com/Dungyichao/OPC_Data_Access#31-basic-user-interface-introduction-video)
-	* 3.2 [Some topic]()
+	* 3.2 [Design and Hardware Relationship](https://github.com/Dungyichao/OPC_Data_Access/blob/main/README.md#32-design-and-hardware-relationship)
 	
 
 
