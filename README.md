@@ -197,6 +197,7 @@ These abbrevation indicate control modes ([Reference_2_2_1](https://control.com/
             <td align="left">Cascade control is not a mode. It's a control scheme like Feedback, Feedforward, and Ratio control. Cascade control always involves two controllers each measuring separate but inter-related processes. One controller is the master and the other is the slave. The master provides the setpoint being used by the slave. </br></br>Controller automatically adjusts its output to try to keep PV = SP. Setpoint value set “remotely” by primary (master) controller.
             <p align="center">
                 <img src="/image/cascade_mode_block.JPG" height="50%" width="50%"> 
+	        see Reference_2_2_1
             </p> 
             </td>
         </tr>        
