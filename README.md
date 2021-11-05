@@ -221,7 +221,7 @@ Under a project, you can have multiple <b>FCS</b> folders and multiple <b>HIS</b
 
 In the following image, you can see the folder tree which represents the hierarchy of the project and its components.
 <p align="center">
-<img src="/image/Project_System_View.jpg" height="100%" width="100%"> 
+<img src="/image/Project_System_View.jpg" height="90%" width="90%"> 
 </p> 
 
 # 4. How We Collect - OPC Data Access
