@@ -211,7 +211,10 @@ We will discuss the technical side and design logic of the DCS in this section.
 Please go the the following Youtube link: [Introduction to FCS Programming with 'Plant in a Box'](https://www.youtube.com/watch?v=BIW77bzX3i0) (1hr) to learn the basic usage of user interface and how to abstract the production process into HIS windows graphic. The following link is the screenshot of the video of each step: [Video Screenshot folder](https://github.com/Dungyichao/OPC_Data_Access/tree/main/image/Youtube%20Tutorial).
 
 ## 3.2 Design and Hardware Relationship
-
+Take a look at the following system structure corresponding to physical hardware structure.
+<p align="center">
+<img src="/image/FCS design level.jpg" height="70%" width="70%"> 
+</p>  
 
 # 4. How We Collect - OPC Data Access
 
