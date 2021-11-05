@@ -225,7 +225,7 @@ In the following image, you can see the folder tree which represents the hierarc
 <img src="/image/Project_System_View.jpg" height="70%" width="70%"> 
 	Project System View
 </p> 
-You can have multiple project folders under system view (red line). Under each project (blue line), you can have multiple FCS and HIS. Under each FCS (green line), you can see IOM folder and FUNCTION_BLOCK folder. Under IOM folder, you can have multiple Node, and each node can contain multiple but limited quantity I/O Module (Analog, Digital, Analog/Digital). Each I/O module contains multiple terminal (physically call channel). Under each HIS folder, there is a WINDOW folder, and there are multiple Graphic and Trend folders in the WINDOW folder.
+You can have multiple project folders under system view (red line). Under each project (blue line), you can have multiple FCS and HIS. Under each FCS (green line), you can see IOM folder and FUNCTION_BLOCK folder. Under IOM folder, you can have multiple Node, and each node can contain multiple but limited quantity I/O Module (Analog, Digital, Analog/Digital). Each I/O module contains multiple terminal (physically call channel). There are limited items under FUNCTION_BLOCK folder. In each HIS folder, there is a WINDOW folder, and there are multiple Graphic and Trend folders in the WINDOW folder.
 
 ### 3.3.1 FCS
 
