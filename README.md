@@ -225,6 +225,7 @@ In the following image, you can see the folder tree which represents the hierarc
 <img src="/image/Project_System_View.jpg" height="90%" width="90%"> 
 </p> 
 You can have multiple project folders under system view (red line). Under each project (blue line), you can have multiple FCS and HIS. 
+
 # 4. How We Collect - OPC Data Access
 
 
