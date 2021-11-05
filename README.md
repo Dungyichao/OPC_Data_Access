@@ -217,8 +217,9 @@ Take a look at the following project design level against the physical hardware 
 <img src="/image/FCS_design_level_3.jpg" height="100%" width="100%"> 
 </p>  
 
-Under a project, you can have multiple <b>FCS</b> folders and multiple <b>HIS</b> folders based on your existed DCS structure and design. Each FCS folder represents the existed FCS. Under a FCS folder, you can have multiple but limited <b>Node</b>. Under a Node, you can have multiple but limited <b>I/O Module</b> (input/output). 
+Under a project, you can have multiple <b>FCS</b> and multiple <b>HIS</b> based on your existed DCS structure and design. Under a FCS, you can have multiple but limited <b>Node</b>. Under a Node, you can have multiple but limited <b>I/O Module</b> (input/output). 
 
+## 3.3 Project System View
 In the following image, you can see the folder tree which represents the hierarchy of the project and its components.
 <p align="center">
 <img src="/image/Project_System_View.jpg" height="90%" width="90%"> 
