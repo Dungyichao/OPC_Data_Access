@@ -132,7 +132,7 @@ In a production line, there are large amount of controller, devices and equipmen
 For example, we have 25 Temperature Indicater on the production line, we therefore name the first one as TIC001, and the second one as TIC002, .... and all the way to TIC025.
 
 ## 2.2 Interprete Values on the Screen
-We will now explain what shows on the below graphic 
+We will now explain what shows on the below graphic (see Reference_2_1_1 page 3-7 ~ 3-8)
 <p align="center">
 <img src="/image/faceplate_view_1.jpg" height="100%" width="100%"> 
 	Instrument Faceplate View (click to view larger image)
