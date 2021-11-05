@@ -22,7 +22,7 @@ Let's take a quick look of the system structure in the brochure from Yokogawa Ce
 <img src="/image/brochure_system_structure.JPG" height="90%" width="90%"> 
 </p>  
 
-We will only focus on HIS(Human Interface Station), ENG(Engineering Station) and FCS(Field Control Station) in this tutorial. The following system structure is what IT department would take care and within this tutorial's scope. You will notice OPC(Open Platform Communications) in the structure which play the role of exchanging data in the automation devices. This tutorial mainly focus on collecting data via OPC. 
+We will only focus on HIS(Human Interface Station), ENG(Engineering Station) and FCS(Field Control Station) in this tutorial. The following system structure is within this tutorial's scope. You will notice OPC(Open Platform Communications) in the structure which is optional to the whole system and only play the role of exchanging data in the automation devices. 
 <p align="center">
 <img src="/image/IT_system_structure.jpg" height="60%" width="60%"> 
 </p>  
