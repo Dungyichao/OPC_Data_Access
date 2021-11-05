@@ -222,7 +222,7 @@ Under a project, you can have multiple <b>FCS</b> and multiple <b>HIS</b> based 
 ## 3.3 Project System View
 In the following image, you can see the folder tree which represents the hierarchy of the project and its components.
 <p align="center">
-<img src="/image/Project_System_View.jpg" height="90%" width="90%"> 
+<img src="/image/Project_System_View.jpg" height="70%" width="70%"> 
 </p> 
 You can have multiple project folders under system view (red line). Under each project (blue line), you can have multiple FCS and HIS. 
 
