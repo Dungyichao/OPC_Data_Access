@@ -236,6 +236,11 @@ Input/Output (I/O) and communication modules are mounted on Node unit (NU). And 
 
 ### 3.3.4 Graphic and Trend
 
+### 3.3.5 Function Block
+Function block is a big topic, so we will talk about it in section 3.4.
+
+## 3.4 Function Block
+
 # 4. How We Collect - OPC Data Access
 
 
