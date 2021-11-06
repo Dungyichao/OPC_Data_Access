@@ -231,7 +231,7 @@ You can have multiple project folders under system view (red line). Under each p
 ### 3.3.1 FCS
 
 ### 3.3.2 Node and I/O Modules
-
+Input/Output (I/O) and communication modules are mounted on Node unit (NU). And NU transmits those module data to FCS.
 ### 3.3.3 Control Function
 
 ### 3.3.4 Graphic and Trend
