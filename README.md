@@ -251,7 +251,7 @@ The following is the core steps to communicate with OPC server. You can wrape it
 </p> 
 
 ## 4.2 Codes
-Make sure you have the dynamic library which vendor provided to you to access OPC server function. Then, you need to add the library to your program reference.
+Create a C# Console Application. Make sure you have the dynamic library which vendor provided to you to access OPC server function. Then, you need to add the library to your program reference.
 <p align="center">
 <img src="/image/csharp_reference_opcda.JPG" height="80%" width="80%"> 
 </p> 
@@ -481,4 +481,70 @@ static void KepGroup_DataChange(int TransactionID, int NumItems, ref Array Clien
 }
 ```
 
+## 4.3 Make Console Application to Service
+This step is optional. 
+First step, right click on the console application solution, add new item, select Windows Service.
 
+Second step, right click on the new create ```Service1.cs``` view code. 
+```c#
+using System.ServiceProcess;
+using System.Threading;
+
+namespace Your_Solution_Name
+{
+    public partial class Your_Service_Name : ServiceBase
+    {
+        readonly Program _application = new Program();
+
+        static void Main()
+        {
+            ServiceBase[] servicesToRun = { new Your_Service_Name() };
+            Run(servicesToRun);
+        }
+
+        public Your_Service_Name()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnStart(string[] args)
+        {
+            Thread thread = new Thread(() => _application.Start());
+            thread.Start();
+        }
+
+        protected override void OnStop()
+        {
+            Thread thread = new Thread(() => _application.Stop());
+            thread.Start();
+        }
+    }
+}
+```
+
+Then you should slightly modify the console application program ```Program.cs```. The original ```public void Main(arg[])``` should change to other name so that it will not conflict with the Main function we created in Service.cs file. There is only one Main function can stay in a program. So we change the original Main() to Main_APP() in  ```Program.cs```.
+```C#
+static void Main_APP(){
+
+   //connect to database
+   .....
+   
+   //connect to OPC server and disconnect
+   .....
+   
+   //insert into database
+   ......
+}
+
+public void Start()
+{
+    Main_APP();
+}
+
+public void Stop()
+{
+    Environment.Exit(1);  //console app
+
+}
+
+```
