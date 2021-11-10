@@ -247,13 +247,13 @@ OPC server will be the one to ask data from each FCS on behalf of us. We will no
 ## 4.1 Steps
 The following is the core steps to communicate with OPC server. You can wrape it inside your program logic. For example, you can first connect to your SQL database to know whatever tag names need to be asked. After asking OPC server and retrieved data, identify the quality of the data, and then insert these data into SQL database. 
 <p align="center">
-<img src="/image/DCS_OPC_Client_Stpes.JPG" height="70%" width="70%"> 
+<img src="/image/DCS_OPC_Client_Stpes.jpg" height="70%" width="70%"> 
 </p> 
 
 ## 4.2 Codes
 Make sure you have the dynamic library which vendor provided to you to access OPC server function. Then, you need to add the library to your program reference.
 <p align="center">
-<img src="/image/csharp_reference_opcda.jpg" height="50%" width="50%"> 
+<img src="/image/csharp_reference_opcda.JPG" height="50%" width="50%"> 
 </p> 
 
 ```C#
