@@ -17,7 +17,7 @@ This is a tutorial of showing how to collect data from OPC server which connecte
 4. [How We Collect - OPC Data Access](https://github.com/Dungyichao/OPC_Data_Access#4-how-we-collect---opc-data-access)
 	* 4.1 [Connect to OPC Steps](https://github.com/Dungyichao/OPC_Data_Access#41-connect-to-opc-steps)
 	* 4.2 [Codes](https://github.com/Dungyichao/OPC_Data_Access#42-codes)
-	* 4.3 [Make Console Application to Service](https://github.com/Dungyichao/OPC_Data_Access#43-make-console-application-to-service)
+	* 4.3 [Make Console Application to Service](https://github.com/Dungyichao/OPC_Data_Access#43-make-console-application-to-service) (optional)
 		* 4.3.1 [Convert the App](https://github.com/Dungyichao/OPC_Data_Access#431-convert-the-app)
 		* 4.3.2 [Register and run the service](https://github.com/Dungyichao/OPC_Data_Access#432-register-and-run-the-service)	
 
