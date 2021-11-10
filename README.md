@@ -264,6 +264,8 @@ static void OPC_Collect_Function(string Connect_str, string query_str, string in
     string[] TagWholeName = new string[1000];
     int[] TagCHandles = new int[1000];
     DataTable ReadTagNameTable = new DataTable();
+    //string Connect_str = "Data Source = 172.17.216.5; Initial Catalog=DatabaseName; UID=sa; pwd=some_password; Timeout=10";
+    //string query_str = "SELECT * FROM TABLE_NAME WHERE 1=1 AND ...."
     ReadTagNameTable = ReadTagName_IP_String(Connect_str, query_str);
     int NumItem = ReadTagNameTable.Rows.Count;
     int sleep_time = 4000;
@@ -374,6 +376,8 @@ static DataTable ReadTagName_IP_String(string Connect_str, string Select_str)
     return tempTable;
 }
 ```
+
+
 Functions: Insert to database with retrieved tag name data
 ```C#
 using System.Data.SqlClient;
@@ -462,6 +466,26 @@ static void KepGroup_DataChange(int TransactionID, int NumItems, ref Array Clien
     }
 
 
+}
+```
+
+Function
+```C#
+static void KepGroup_DataChange(int TransactionID, int NumItems, ref Array ClientHandles, ref Array ItemValues, ref Array Qualities, ref Array TimeStamps)
+{
+    for (int i = 1; i < NumItems + 1; i++)
+    {
+
+
+        if (Convert.ToInt32(ClientHandles.GetValue(i)) == i)
+        {
+            if (ItemValues.GetValue(i) != null)
+            {
+                Console.WriteLine(ItemValues.GetValue(i).ToString());
+            }
+        }
+
+    }
 }
 ```
 
