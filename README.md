@@ -561,6 +561,6 @@ Key in
 and press enter. You should see 
 ```The Commit phase completed successfully. The transacted install has completed```
 
-
+Finally, go to Services. Right click on Service Name you created in the the solution, click “Start”.
 
 
