@@ -242,7 +242,7 @@ Function block is a big topic, so we will talk about it in section 3.4.
 ## 3.4 Function Block
 
 # 4. How We Collect - OPC Data Access
-OPC server will be the one to ask data from each FCS on behalf of us. We will now explain how to write program as OPC client to ask OPC server to retrieve data.
+OPC server will be the one to ask data from each FCS on behalf of us. We will now explain how to write program as OPC client to ask OPC server to retrieve data. ([Link](https://www.programmersought.com/article/51263918194/), [Reference_4_0_1](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_0_1_C%23%20uses%20DA%20and%20UA%20to%20access%20PLC%20through%20KepServer%20-%20Programmer%20Sought.pdf))
 
 ## 4.1 Steps
 The following is the core steps to communicate with OPC server. You can wrape it inside your program logic. For example, you can first connect to your SQL database to know whatever tag names need to be asked. After asking OPC server and retrieved data, identify the quality of the data, and then insert these data into SQL database. 
@@ -446,6 +446,8 @@ static int InsertData_IP_String(DataTable dt, Array values, Array Quality, strin
     }
 }
 ```
+ You will se quality code in the above code. The quality of a given OPC tag is used to represent the validity of the tag's value (in other words, whether or not an OPC client can trust the data). OPC quality is divided into three main categories: Good (generally indicates the data is valid), Bad (generally indicates the data is not valid), or Uncertain (generally indicates the data is speculative in some manner). Each category is further divided into sub-categories; the exact criteria for using a particular sub-category may vary depending on the end protocol and vendor ([link](https://honeywellprocess-community.force.com/opcsupport/s/article/What-are-the-OPC-Quality-Codes), [Reference_4_2_1](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_2_1_What%20are%20the%20OPC%20Quality%20Codes.pdf))
+
 Function
 ```C#
 static void KepGroup_DataChange(int TransactionID, int NumItems, ref Array ClientHandles, ref Array ItemValues, ref Array Qualities, ref Array TimeStamps)
