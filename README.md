@@ -259,13 +259,13 @@ Make sure you have the dynamic library which vendor provided to you to access OP
 ```C#
 using OPCAutomation;
 
+//string Connect_str = "Data Source = 172.17.216.5; Initial Catalog=DatabaseName; UID=sa; pwd=some_password; Timeout=10";
+//string query_str = "SELECT * FROM TABLE_NAME WHERE 1=1 AND ...."
 static void OPC_Collect_Function(string Connect_str, string query_str, string insert_str)
 {
     string[] TagWholeName = new string[1000];
     int[] TagCHandles = new int[1000];
-    DataTable ReadTagNameTable = new DataTable();
-    //string Connect_str = "Data Source = 172.17.216.5; Initial Catalog=DatabaseName; UID=sa; pwd=some_password; Timeout=10";
-    //string query_str = "SELECT * FROM TABLE_NAME WHERE 1=1 AND ...."
+    DataTable ReadTagNameTable = new DataTable();    
     ReadTagNameTable = ReadTagName_IP_String(Connect_str, query_str);
     int NumItem = ReadTagNameTable.Rows.Count;
     int sleep_time = 4000;
