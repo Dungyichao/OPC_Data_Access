@@ -245,8 +245,222 @@ Function block is a big topic, so we will talk about it in section 3.4.
 OPC server will be the one to ask data from each FCS on behalf of us. We will now explain how to write program as OPC client to ask OPC server to retrieve data.
 
 ## 4.1 Steps
+The following is the core steps to communicate with OPC server. You can wrape it inside your program logic. For example, you can first connect to your SQL database to know whatever tag names need to be asked. After asking OPC server and retrieved data, identify the quality of the data, and then insert these data into SQL database. 
 <p align="center">
 <img src="/image/DCS_OPC_Client_Stpes.jpg" height="50%" width="50%"> 
 </p> 
+
+## 4.2 Codes
+You need to first add reference
+
+
+```C#
+using OPCAutomation;
+
+static void OPC_Collect_Function(string Connect_str, string query_str, string insert_str)
+{
+    string[] TagWholeName = new string[1000];
+    int[] TagCHandles = new int[1000];
+    DataTable ReadTagNameTable = new DataTable();
+    ReadTagNameTable = ReadTagName_IP_String(Connect_str, query_str);
+    int NumItem = ReadTagNameTable.Rows.Count;
+    int sleep_time = 4000;
+    if (NumItem > 0 && NumItem < 1000)
+    {
+        bool result = Int32.TryParse(ReadTagNameTable.Rows[0]["TagGroup"].ToString(), out sleep_time);
+        if (result)
+        {
+            sleep_time = 1 * 1000 * 60 + 10 * 1000;
+            if (sleep_time < 0)
+            {
+                sleep_time = 1000;
+            }
+        }
+        for (int j = 1; j <= NumItem; j++)
+        {
+            TagWholeName[j] = ReadTagNameTable.Rows[j - 1]["TagName"].ToString();
+            TagCHandles[j] = j;
+        }
+    }
+    else
+    {
+        return;
+    }
+
+    OPCServer _OPCServer = new OPCServer();
+
+    _OPCServer.Connect(KEPServerVersion, KEPServerIP);
+    _OPCServer.Logon("enguser", "");
+
+    OPCGroups groups;
+    OPCGroup group;
+    OPCItems items;
+    OPCItem item;
+    Array strItemIDs;
+    Array lClientHandles;
+    Array lserverhandles;
+    Array lErrors;
+    object RequestedDataTypes = null;
+    object AccessPaths = null;
+
+    groups = _OPCServer.OPCGroups;
+    groups.DefaultGroupIsActive = true; //Set the group collection to be active by default
+    groups.DefaultGroupDeadband = 0; //Set dead zone
+    groups.DefaultGroupUpdateRate = 200;//Set the update frequency
+
+
+    group = groups.Add(null);
+    group.IsActive = true;
+    //group.IsSubscribed = true; //subscribe
+    group.UpdateRate = 200;    //Update refresh frequency
+    _OPCServer.OPCGroups.DefaultGroupDeadband = 0;
+    group.DataChange += new DIOPCGroupEvent_DataChangeEventHandler(KepGroup_DataChange);
+
+    items = group.OPCItems;
+
+    strItemIDs = (Array)TagWholeName;
+    lClientHandles = (Array)TagCHandles;
+    items.AddItems(NumItem, ref strItemIDs, ref lClientHandles, out lserverhandles, out lErrors, RequestedDataTypes, AccessPaths);
+
+    string currentTime_mm = String.Empty;
+    int mm = 0;
+    bool mm_result = false;
+    object qualities = new object(); //opc server will store the quality of the item 
+    object timestamps = new object(); //store the timestamp of the read
+
+    Array values; //opc server will store the values in this array
+    Array errors; //opc server will store any errors in this array
+
+    //read directly from device
+    group.SyncRead((short)OPCDataSource.OPCDevice, NumItem, ref lserverhandles, out values, out errors, out qualities, out timestamps);
+
+    Array qualities_array = (Array)qualities;
+
+    int insert_result = InsertData_IP_String(ReadTagNameTable, values, qualities_array, Connect_str, insert_str);
+
+    groups.RemoveAll();
+    _OPCServer.Disconnect();
+
+}
+```
+Functions: Connect to database and retrieve tag name information
+```C#
+using System.Data.SqlClient;
+
+static DataTable ReadTagName_IP_String(string Connect_str, string Select_str)
+{
+    DataTable tempTable = new DataTable();
+    string querystring = Select_str;
+
+    try
+    {
+        using (SqlConnection Myconn2 = new SqlConnection(Connect_str))
+        using (SqlCommand Mycomm2 = new SqlCommand(querystring, Myconn2))
+        {
+            Myconn2.Open();
+            //Mycomm2.Parameters.Add("@CNO", CNO);
+            SqlDataAdapter MyAd2 = new SqlDataAdapter();
+            MyAd2.SelectCommand = Mycomm2;
+            MyAd2.Fill(tempTable);
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.ToString());
+    }
+
+    return tempTable;
+}
+```
+Functions: Insert to database with retrieved tag name data
+```C#
+using System.Data.SqlClient;
+
+static int InsertData_IP_String(DataTable dt, Array values, Array Quality, string Connect_str, string insert_str)
+{
+    string insertstring = insert_str;
+    string currentTime = DateTime.Now.ToString("yyyyMMddHHmmss");
+    Int16 Code;
+    Int16 Quality_Good_Code = 190;
+    Int16 Quality_Uncertain_Code = 64;
+    using (SqlConnection Myconn2 = new SqlConnection(Connect_str))
+    using (SqlCommand Mycomm2 = new SqlCommand(insertstring, Myconn2))
+    {
+
+        try
+        {
+            Myconn2.Open();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+
+                if (Int16.TryParse(Quality.GetValue(i + 1).ToString(), out Code))
+                {
+                    if (Code > Quality_Good_Code)
+                    {
+                        Mycomm2.Parameters.Clear();
+                        Mycomm2.Parameters.AddWithValue("@tagname", dt.Rows[i]["TagName"].ToString());
+                        Mycomm2.Parameters.AddWithValue("@tagvalue", values.GetValue(i + 1).ToString());
+                        Mycomm2.Parameters.AddWithValue("@tagtime", currentTime);
+                        Mycomm2.ExecuteNonQuery();
+                        string success_string_log = string.Format("TagName: {0} , value: {1} insert successful", dt.Rows[i]["TagName"].ToString(), values.GetValue(i + 1).ToString());
+                        Console.WriteLine(success_string_log);
+                        log_string_file(success_string_log);
+                    }
+                    else if (Code >= Quality_Uncertain_Code)
+                    {
+                        Mycomm2.Parameters.Clear();
+                        Mycomm2.Parameters.AddWithValue("@tagname", dt.Rows[i]["TagName"].ToString());
+                        Mycomm2.Parameters.AddWithValue("@tagvalue", values.GetValue(i + 1).ToString());
+                        Mycomm2.Parameters.AddWithValue("@tagtime", currentTime);
+                        Mycomm2.ExecuteNonQuery();
+                        string success_string_log = string.Format("TagName: {0} , value: {1} insert successful. Quality is Uncertain. Quality Code: {2}", dt.Rows[i]["TagName"].ToString(), values.GetValue(i + 1).ToString(), Code.ToString());
+                        Console.WriteLine(success_string_log);
+                    }
+                    else
+                    {
+                        string error_string_log = string.Format("TagName: {0} Quality is bad, cannot read value. Quality Code: {1}", dt.Rows[i]["TagName"].ToString(), Code.ToString());
+                        Console.WriteLine(error_string_log);
+                    }
+                }
+                else
+                {
+                    string error_quality_string_log = string.Format("TagName: {0} Cannot get Quality, skip this value", dt.Rows[i]["TagName"].ToString());
+                    Console.WriteLine(error_quality_string_log);
+                }
+
+            }
+            Myconn2.Close();
+            return 0;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.ToString());
+            return 1;
+        }
+    }
+}
+```
+Function
+```C#
+static void KepGroup_DataChange(int TransactionID, int NumItems, ref Array ClientHandles, ref Array ItemValues, ref Array Qualities, ref Array TimeStamps)
+{
+
+    for (int i = 1; i < NumItems + 1; i++)
+    {
+
+
+        if (Convert.ToInt32(ClientHandles.GetValue(i)) == i)
+        {
+            if (ItemValues.GetValue(i) != null)
+            {
+                Console.WriteLine(ItemValues.GetValue(i).ToString());
+            }
+        }
+
+    }
+
+
+}
+```
 
 
