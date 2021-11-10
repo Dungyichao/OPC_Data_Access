@@ -245,6 +245,7 @@ Function block is a big topic, so we will talk about it in section 3.4.
 OPC server will be the one to ask data from each FCS on behalf of us. We will now explain how to write program as OPC client to ask OPC server to retrieve data.
 
 ## 4.1 Steps
+<p align="center">
 <img src="/image/DCS_OPC_Client_Stpes.jpg" height="50%" width="50%"> 
 </p> 
 
