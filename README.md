@@ -268,18 +268,8 @@ static void OPC_Collect_Function(string Connect_str, string query_str, string in
     DataTable ReadTagNameTable = new DataTable();    
     ReadTagNameTable = ReadTagName_IP_String(Connect_str, query_str);
     int NumItem = ReadTagNameTable.Rows.Count;
-    int sleep_time = 4000;
     if (NumItem > 0 && NumItem < 1000)
-    {
-        bool result = Int32.TryParse(ReadTagNameTable.Rows[0]["TagGroup"].ToString(), out sleep_time);
-        if (result)
-        {
-            sleep_time = 1 * 1000 * 60 + 10 * 1000;
-            if (sleep_time < 0)
-            {
-                sleep_time = 1000;
-            }
-        }
+    {        
         for (int j = 1; j <= NumItem; j++)
         {
             TagWholeName[j] = ReadTagNameTable.Rows[j - 1]["TagName"].ToString();
@@ -344,7 +334,7 @@ static void OPC_Collect_Function(string Connect_str, string query_str, string in
 
 }
 ```
-Noticed that we only allowed 1000 tag names because we only assign an array to hold 1000 value. You also need to make sure your OPC server allows 1000 data query once. You can also see in the second for loop, we shift the whole table by one row.  
+Noticed that we only allowed 1000 tag names because we only assign an array to hold 1000 value. You also need to make sure your OPC server allows 1000 data query once. You can also see in the first for loop, we shift the whole table by one row.  
 
 
 Functions: Connect to database and retrieve tag name information
