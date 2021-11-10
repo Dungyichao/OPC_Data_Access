@@ -326,9 +326,6 @@ static void OPC_Collect_Function(string Connect_str, string query_str, string in
     lClientHandles = (Array)TagCHandles;
     items.AddItems(NumItem, ref strItemIDs, ref lClientHandles, out lserverhandles, out lErrors, RequestedDataTypes, AccessPaths);
 
-    string currentTime_mm = String.Empty;
-    int mm = 0;
-    bool mm_result = false;
     object qualities = new object(); //opc server will store the quality of the item 
     object timestamps = new object(); //store the timestamp of the read
 
@@ -347,6 +344,9 @@ static void OPC_Collect_Function(string Connect_str, string query_str, string in
 
 }
 ```
+Noticed that we only allowed 1000 tag names because we only assign an array to hold 1000 value. You also need to make sure your OPC server allows 1000 data query once. You can also see in the second for loop, we shift the whole table by one row.  
+
+
 Functions: Connect to database and retrieve tag name information
 ```C#
 using System.Data.SqlClient;
