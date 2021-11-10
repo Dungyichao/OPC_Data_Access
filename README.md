@@ -556,7 +556,8 @@ Double click on the Service1.cs, right click on Service1.cs designer page, click
 ### 4.3.1 Register and run the service
 Place the solution folder in C drive (contain program solution as well)
 From the Start menu, select the Visual Studio <version> directory, then select Developer Command Prompt for VS <version>  and run as Administrator
-Key in: ```installutil C:\Solution_Folder\Solution_Name\bin\Debug\Solution_Name.exe```	and press enter. You should see ```The Commit phase completed successfully. The transacted install has completed```
+Key in: 
+	```installutil C:\Solution_Folder\Solution_Name\bin\Debug\Solution_Name.exe```	and press enter. You should see ```The Commit phase completed successfully. The transacted install has completed```
 
 
 
