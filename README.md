@@ -553,7 +553,7 @@ public void Stop()
 
 Double click on the Service1.cs, right click on Service1.cs designer page, click on ```Add Installer```, then a ProjectInstaller.cs will be created. You can click on the ProjectInstaller.cs Design page and click on ```serviceInstaller1``` icon and try to add some detail in the Properties such as service display name, service description. These information will be display when you install this service to Windows Services. In the ```serviceProcessInstaller1``` (also in ProjectInstaller.cs Design page), you can change the Account type (LocalSystem, LocalService, NetworkService, User) in Misc. Rebuild the solution. 
 
-### 4.3.1 Register and run the service
+### 4.3.2 Register and run the service
 Place the solution folder in C drive (contain program solution as well)
 From the Start menu, select the Visual Studio <version> directory, then select Developer Command Prompt for VS <version>  and run as Administrator
 Key in  
