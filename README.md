@@ -14,7 +14,10 @@ This is a tutorial of showing how to collect data from OPC server which connecte
 	* 3.1 [Basic User Interface Introduction (video)](https://github.com/Dungyichao/OPC_Data_Access#31-basic-user-interface-introduction-video)
 	* 3.2 [Design and Hardware Relationship](https://github.com/Dungyichao/OPC_Data_Access/blob/main/README.md#32-design-and-hardware-relationship)
 	* 3.3 [Project System View](https://github.com/Dungyichao/OPC_Data_Access/blob/main/README.md#33-project-system-view)
-	
+4. [How We Collect - OPC Data Access](https://github.com/Dungyichao/OPC_Data_Access#4-how-we-collect---opc-data-access)
+	* 4.1 [Connect to OPC Steps](https://github.com/Dungyichao/OPC_Data_Access#31-basic-user-interface-introduction-video)
+	* 4.2 [Codes](https://github.com/Dungyichao/OPC_Data_Access/blob/main/README.md#32-design-and-hardware-relationship)
+	* 4.3 [Make Console Application to Service](https://github.com/Dungyichao/OPC_Data_Access/blob/main/README.md#33-project-system-view)	
 
 
 # 1. Introduction <br />
@@ -244,7 +247,7 @@ Function block is a big topic, so we will talk about it in section 3.4.
 # 4. How We Collect - OPC Data Access
 OPC server will be the one to ask data from each FCS on behalf of us. We will now explain how to write program as OPC client to ask OPC server to retrieve data. ([Link](https://www.programmersought.com/article/51263918194/), [Reference_4_0_1](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_0_1_C%23%20uses%20DA%20and%20UA%20to%20access%20PLC%20through%20KepServer%20-%20Programmer%20Sought.pdf))
 
-## 4.1 Steps
+## 4.1 Connect to OPC Steps
 The following is the core steps to communicate with OPC server. You can wrape it inside your program logic. For example, you can first connect to your SQL database to know whatever tag names need to be asked. After asking OPC server and retrieved data, identify the quality of the data, and then insert these data into SQL database. 
 <p align="center">
 <img src="/image/DCS_OPC_Client_Stpes.jpg" height="40%" width="40%"> 
