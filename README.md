@@ -228,7 +228,7 @@ Please go the the following Youtube link: [Introduction to FCS Programming with 
 ## 3.2 Design and Hardware Relationship
 Take a look at the following project design level against the physical hardware level.
 <p align="center">
-<img src="/image/FCS_design_level_3.jpg" height="100%" width="100%"> 
+<img src="/image/FCS_design_level_4.jpg" height="100%" width="100%"> 
 </p>  
 
 Under a project, you can have multiple <b>FCS</b> and multiple <b>HIS</b> based on your existed DCS structure and design. Under a FCS, you can have multiple but limited <b>Node</b>. Under a Node, you can have multiple but limited <b>I/O Module</b> (input/output). 
@@ -250,7 +250,7 @@ Input/Output (I/O) and communication modules are mounted on Node unit (NU). And 
 
 Let's say we have a model AAB841 I/O module ([Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf) page 2-9). It is an analog I/O module with 8 channel input and 8 channel output, 1 to 5 V Input, 4 to 20 mA Output. When you add the node module model in the FCS, you will be able to see the terminals (channel) of the I/O module by double click on the node I/O module (shown in the following imgae), 8 terminal for input and the other 8 for output. You can use the Terminal number (such as %Z033101) in function blocks.
 <p align="center">
-<img src="/image/node_terminal.jpg" height="90%" width="90%"> 
+<img src="/image/node_terminal.jpg" height="80%" width="80%"> 
 </p> 
 
 ### 3.3.3 Control Function
