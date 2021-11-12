@@ -52,7 +52,7 @@ What is the role and relationship between each elements? Let's take a look at fo
     	<p align="center">
 		<img src="/image/FCU_image.JPG" height="60%" width="60%"> 
 	        </br>FCU
-	</p> </br></br>
+	</p> 
 	<p align="center">
 		<img src="/image/FCU_Node_Connect.JPG" height="60%" width="60%"> 
 	        </br>FCU and Node Connection
