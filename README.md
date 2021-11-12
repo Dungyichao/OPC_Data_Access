@@ -51,11 +51,11 @@ What is the role and relationship between each elements? Let's take a look at fo
     </br> </br> In a large plant, you might have multiple FCS, each FCS will be assigned with an IPv4 so that HIS, ENG, OPC can reach out to these FCS via network. FCS is comprised of the following components: Field control unit (FCU, like brain, CPU), Node unit (NU, with communication module), ESB bus/Optical ESB bus (wiring between FCU and NU), House Keeping Unit(HKU). </br></br>
     	<p align="center">
 		<img src="/image/FCU_image.JPG" height="60%" width="60%"> 
-	        FCU
+	        </br>FCU
 	</p> </br></br>
 	<p align="center">
 		<img src="/image/FCU_Node_Connect.JPG" height="60%" width="60%"> 
-	        FCU and Node Connection
+	        </br>FCU and Node Connection
 	</p> 
     	    </td>
         </tr>
