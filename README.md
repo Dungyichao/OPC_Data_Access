@@ -228,7 +228,7 @@ Please go the the following Youtube link: [Introduction to FCS Programming with 
 ## 3.2 Design and Hardware Relationship
 Take a look at the following project design level against the physical hardware level.
 <p align="center">
-<img src="/image/FCS_design_level_4.jpg" height="100%" width="100%"> 
+<img src="/image/FCS_design_level_5.jpg" height="100%" width="100%"> 
 </p>  
 
 Under a project, you can have multiple <b>FCS</b> and multiple <b>HIS</b> based on your existed DCS structure and design. Under a FCS, you can have multiple but limited <b>Node</b>. Under a Node, you can have multiple but limited <b>I/O Module</b> (input/output). 
