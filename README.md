@@ -504,7 +504,7 @@ static void KepGroup_DataChange(int TransactionID, int NumItems, ref Array Clien
 ```
 
 ## 4.3 Make Console Application to Service
-This step is optional. ([Linl(https://stackoverflow.com/questions/7764088/net-console-application-as-windows-service), [Reference_4_3_1](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_3_1_c%23%20-%20.NET%20console%20application%20as%20Windows%20service%20-%20Stack%20Overflow.pdf))
+This step is optional. ([Link](https://stackoverflow.com/questions/7764088/net-console-application-as-windows-service), [Reference_4_3_1](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_3_1_c%23%20-%20.NET%20console%20application%20as%20Windows%20service%20-%20Stack%20Overflow.pdf))
 
 ### 4.3.1 Convert the App
 First step, right click on the console application solution, add new item, select Windows Service.
