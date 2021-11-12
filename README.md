@@ -248,7 +248,7 @@ You can have multiple project folders under system view (red line). Under each p
 ### 3.3.2 Node and I/O Modules
 Input/Output (I/O) and communication modules are mounted on Node unit (NU). And NU transmits those module data to FCS. Some module can handle analog I/O, some can hanle digital I/O, while some can handle both analog and digital I/O. Please refer to [Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf) page 2-9 to see different model of module and their capability. Different node unit can hold different limited amount of I/O module.
 
-Let's say we have a model AAB841 I/O module ([Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf) page 2-9). It is an analog I/O module with 8 channel input and 8 channel output, 1 to 5 V Input, 4 to 20 mA Output. When you add the node module model in the FCS, you will be able to see the terminals (channel) of the I/O module by double click on the node I/O module (shown in the following imgae), 8 terminal for . You can use the Terminal number (such as %Z033101) in function blocks.
+Let's say we have a model AAB841 I/O module ([Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf) page 2-9). It is an analog I/O module with 8 channel input and 8 channel output, 1 to 5 V Input, 4 to 20 mA Output. When you add the node module model in the FCS, you will be able to see the terminals (channel) of the I/O module by double click on the node I/O module (shown in the following imgae), 8 terminal for input and the other 8 for output. You can use the Terminal number (such as %Z033101) in function blocks.
 <p align="center">
 <img src="/image/node_terminal.jpg" height="90%" width="90%"> 
 </p> 
