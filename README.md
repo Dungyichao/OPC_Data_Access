@@ -233,16 +233,19 @@ In the following image, you can see the folder tree which represents the hierarc
 </p> 
 You can have multiple project folders under system view (red line). Under each project (blue line), you can have multiple FCS and HIS. Under each FCS (green line), you can see IOM folder and FUNCTION_BLOCK folder. Under IOM folder, you can have multiple Node, and each node can contain multiple but limited quantity I/O Module (Analog, Digital, Analog/Digital). Each I/O module contains multiple terminal (physically call channel). There are limited items under FUNCTION_BLOCK folder. In each HIS folder, there is a WINDOW folder, and there are multiple Graphic and Trend folders in the WINDOW folder.
 
-### 3.3.1 FCS
+### 3.3.1 FCS and FCU
+
+<p align="center">
+<img src="/image/FCU_image.JPG" height="70%" width="70%"> 
+</p> 
 
 ### 3.3.2 Node and I/O Modules
-Input/Output (I/O) and communication modules are mounted on Node unit (NU). And NU transmits those module data to FCS.
+Input/Output (I/O) and communication modules are mounted on Node unit (NU). And NU transmits those module data to FCS. Some module can handle analog I/O, some can hanle digital I/O, while some can handle both analog and digital I/O. Please refer to [Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf) page 2-9 to see different model of module and their capability. Different node unit can hold different limited amount of I/O module
+
 ### 3.3.3 Control Function
+Function block is a big topic, so we will talk about it in section 3.4.
 
 ### 3.3.4 Graphic and Trend
-
-### 3.3.5 Function Block
-Function block is a big topic, so we will talk about it in section 3.4.
 
 ## 3.4 Function Block
 
