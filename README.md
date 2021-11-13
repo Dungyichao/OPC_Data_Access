@@ -286,6 +286,10 @@ You can find common switches and global switch when you click on SWITCH folder.
 
 ### 3.3.4 Message
 
+<p align="center">
+<img src="/image/project_message_detail.JPG" height="90%" width="90%"> 
+</p> 
+
 ### 3.3.5 Control Function
 Function block is a big topic, so we will talk about it in section 3.4.
 <p align="center">
