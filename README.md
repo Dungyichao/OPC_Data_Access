@@ -287,7 +287,7 @@ You can find common switches and global switch when you click on SWITCH folder.
 ### 3.3.4 Message
 
 <p align="center">
-<img src="/image/project_message_detail.JPG" height="90%" width="90%"> 
+<img src="/image/project_message_detail.jpg" height="90%" width="90%"> 
 </p> 
 
 ### 3.3.5 Control Function
