@@ -290,6 +290,31 @@ You can find common switches and global switch when you click on SWITCH folder.
 <img src="/image/project_message_detail.jpg" height="90%" width="90%"> 
 </p> 
 
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Message Output</th>
+            <th align="center">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Annunciator Message Output</td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="center">Operator Guide Message</td>
+            <td align="left">It alert the operator to the operator guide view in real-time situations. Messages can be triggered by a sequence table, timer, or counter.</td>
+        </tr>      
+	<tr>
+            <td align="center">Printout Message </td>
+            <td align="left">They are triggered by the sequence control function to printout the message to indicate certain timing of the process.</td>
+        </tr>   
+    </tbody>
+</table>
+</p>
+
 ### 3.3.5 Control Function
 Function block is a big topic, so we will talk about it in section 3.4.
 <p align="center">
