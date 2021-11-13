@@ -263,7 +263,7 @@ You can find common switches and global switch when you click on SWITCH folder.
 A ```Global switch``` is an internal switch with the same logical value on all stations in the same domain.
 
 <p align="center">
-<img src="/image/project_switch.JPG" height="80%" width="80%"> 
+<img src="/image/project_switch.JPG" height="50%" width="50%"> 
 </p> 
 
 ### 3.3.4 Message
