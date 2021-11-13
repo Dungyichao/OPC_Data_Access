@@ -256,6 +256,15 @@ Let's say we have a model AAB841 I/O module ([Reference_1_1_1](https://web-mater
 For tag name and label, the setting items may vary, depending on Type. For analog I/O, only user-defined label can be set. Tag name cannot be set. For digital I/O, tag name or user-defined label can be set. 
 
 ### 3.3.3 Switch
+You can find common switches and global switch when you click on SWITCH folder. 
+
+```Common switches``` are internal switches used by various control functions for holding logical values in an FCS. The logical value of a common switch cannot be directly output to the I/O interface but can be used by various control functions in an FCS for testing conditions and reflecting status’.  
+
+A ```Global switch``` is an internal switch with the same logical value on all stations in the same domain.
+
+<p align="center">
+<img src="/image/project_switch.JPG" height="80%" width="80%"> 
+</p> 
 
 ### 3.3.4 Message
 
