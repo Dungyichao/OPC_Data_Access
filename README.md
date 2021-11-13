@@ -258,9 +258,26 @@ For tag name and label, the setting items may vary, depending on Type. For analo
 ### 3.3.3 Switch
 You can find common switches and global switch when you click on SWITCH folder. 
 
-```Common switches``` are internal switches used by various control functions for holding logical values in an FCS. The logical value of a common switch cannot be directly output to the I/O interface but can be used by various control functions in an FCS for testing conditions and reflecting status’.  
-
-A ```Global switch``` is an internal switch with the same logical value on all stations in the same domain.
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Switch</th>
+            <th align="center">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">Common switches</td>
+            <td align="left">```Common switches``` are internal switches used by various control functions for holding logical values in an FCS. The logical value of a common switch cannot be directly output to the I/O interface but can be used by various control functions in an FCS for testing conditions and reflecting status.</td>
+        </tr>
+        <tr>
+            <td align="left">Global switch</td>
+            <td align="left">```Global switch``` is an internal switch with the same logical value on all stations in the same domain.</td>
+        </tr>      
+    </tbody>
+</table>
+</p>
 
 <p align="center">
 <img src="/image/project_switch.JPG" height="50%" width="50%"> 
