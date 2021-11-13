@@ -253,6 +253,8 @@ Let's say we have a model AAB841 I/O module ([Reference_1_1_1](https://web-mater
 <img src="/image/node_terminal.jpg" height="80%" width="80%"> 
 </p> 
 
+For tag name and label, the setting items may vary, depending on Type. For analog I/O, only user-defined label can be set. Tag name cannot be set. For digital I/O, tag name or user-defined label can be set. 
+
 ### 3.3.3 Control Function
 Function block is a big topic, so we will talk about it in section 3.4.
 <p align="center">
