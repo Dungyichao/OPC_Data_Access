@@ -268,12 +268,12 @@ You can find common switches and global switch when you click on SWITCH folder.
     </thead>
     <tbody>
         <tr>
-            <td align="left">Common switches</td>
-            <td align="left">```Common switches``` are internal switches used by various control functions for holding logical values in an FCS. The logical value of a common switch cannot be directly output to the I/O interface but can be used by various control functions in an FCS for testing conditions and reflecting status.</td>
+            <td align="center">Common switches</td>
+            <td align="left">Common switches are internal switches used by various control functions for holding logical values in an FCS. The logical value of a common switch cannot be directly output to the I/O interface but can be used by various control functions in an FCS for testing conditions and reflecting status.</td>
         </tr>
         <tr>
-            <td align="left">Global switch</td>
-            <td align="left">```Global switch``` is an internal switch with the same logical value on all stations in the same domain.</td>
+            <td align="center">Global switch</td>
+            <td align="left">Global switch is an internal switch with the same logical value on all stations in the same domain.</td>
         </tr>      
     </tbody>
 </table>
