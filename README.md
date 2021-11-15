@@ -420,6 +420,8 @@ static void OPC_Collect_Function(string Connect_str, string query_str, string in
 ```
 Noticed that we only allowed 1000 tag names because we only assign an array to hold 1000 value. You also need to make sure your OPC server allows 1000 data query once. You can also see in the first for loop, we shift the whole table by one row.  
 
+Also notice that the OPC server requires credential to be applied, so there is ```logon``` method in OPCServer object. Other vendor's OPC dll library might not provide this logon method.
+
 
 Functions: Connect to database and retrieve tag name information
 ```C#
