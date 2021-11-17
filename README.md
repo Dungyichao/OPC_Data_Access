@@ -323,6 +323,12 @@ Function block is a big topic, so we will talk about it in section 3.4.
 
 <p align="center">
 <table>
+	<thead>
+		<tr>
+            		<th align="center">Processing Functions</th>
+            		<th align="center">Detail</th>
+        	</tr>
+    	</thead>
 	
 </table>
 </p>
