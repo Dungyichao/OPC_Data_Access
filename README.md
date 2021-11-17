@@ -321,6 +321,7 @@ Function block is a big topic, so we will talk about it in section 3.4.
 <img src="/image/Function_block_overview.JPG" height="80%" width="80%"> 
 </p> 
 
+Processing Functions
 <p align="center">
 <table>
     <thead>
@@ -340,11 +341,11 @@ Function block is a big topic, so we will talk about it in section 3.4.
         </tr>      
 	<tr>
             <td align="center">Output Processing</td>
-            <td align="left"></td>
+            <td align="left">It outputs data obtained by calculation processing to the connection destination of the output terminal as an output signal. Various types of output processing are performed according to the type of the function block and the output signal format. </td>
         </tr>   
 	<tr>
             <td align="center">Alarm Processing</td>
-            <td align="left"></td>
+            <td align="left">It performs various types of alarm check during input processing, calculation processing and output processing in order to detect a process error.When an error is detected, the alarm processing reflects the detection of an alarm in the “alarm status” that is one of the data items of the function block, and also notifies a message indicating the detection result to the operation and monitoring. </td>
         </tr>
     </tbody>
 </table>
