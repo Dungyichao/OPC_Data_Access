@@ -340,8 +340,12 @@ Function block is a big topic, so we will talk about it in section 3.4.
         </tr>      
 	<tr>
             <td align="center">Output Processing</td>
-            <td align="left">They are triggered by the sequence control function to printout the message to indicate certain timing of the process.</td>
+            <td align="left"></td>
         </tr>   
+	<tr>
+            <td align="center">Alarm Processing</td>
+            <td align="left"></td>
+        </tr>
     </tbody>
 </table>
 </p>
