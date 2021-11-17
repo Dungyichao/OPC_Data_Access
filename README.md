@@ -301,7 +301,7 @@ You can find common switches and global switch when you click on SWITCH folder.
     <tbody>
         <tr>
             <td align="center">Annunciator Message Output</td>
-            <td align="left"></td>
+            <td align="left">When the alarm occurrence status changes, the annunciator message informs the HIS of the occurrence or recovery of the message. When an alarm occurs, the alarm symbol will flash to prompt the operator for acknowledgment. The alarm symbol will stop flashing once it has been acknowledged. </td>
         </tr>
         <tr>
             <td align="center">Operator Guide Message</td>
