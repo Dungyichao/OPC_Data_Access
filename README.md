@@ -323,20 +323,26 @@ Function block is a big topic, so we will talk about it in section 3.4.
 
 <p align="center">
 <table>
-	<thead>
-		<tr>
-            		<th align="center">Processing Functions</th>
-            		<th align="center">Detail</th>
-        	</tr>
-    	</thead>
-	<tbody>
-		<tr>
-            		<td align="center">Input Processing</td>
-            		<td align="left">It changes an input signal read from the input terminal of the function block into data that is suitable for calculation processing. Various types of input processing are performed according to the type of the function block and the input signal format.</td>
-        	</tr>
-		
-	</tbody>
-	
+    <thead>
+        <tr>
+            <th align="center">Message Output</th>
+            <th align="center">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Annunciator Message Output</td>
+            <td align="left">When the alarm occurrence status changes, the annunciator message informs the HIS of the occurrence or recovery of the message. When an alarm occurs, the alarm symbol will flash to prompt the operator for acknowledgment. The alarm symbol will stop flashing once it has been acknowledged. </td>
+        </tr>
+        <tr>
+            <td align="center">Operator Guide Message</td>
+            <td align="left">It alert the operator to the operator guide view in real-time situations. Messages can be triggered by a sequence table, timer, or counter.</td>
+        </tr>      
+	<tr>
+            <td align="center">Printout Message </td>
+            <td align="left">They are triggered by the sequence control function to printout the message to indicate certain timing of the process.</td>
+        </tr>   
+    </tbody>
 </table>
 </p>
 
