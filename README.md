@@ -329,6 +329,13 @@ Function block is a big topic, so we will talk about it in section 3.4.
             		<th align="center">Detail</th>
         	</tr>
     	</thead>
+	<tbody>
+		<tr>
+            		<td align="center">Input Processing</td>
+            		<td align="left">It changes an input signal read from the input terminal of the function block into data that is suitable for calculation processing. Various types of input processing are performed according to the type of the function block and the input signal format.</td>
+        	</tr>
+		
+	</tbody>
 	
 </table>
 </p>
