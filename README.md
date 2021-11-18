@@ -333,11 +333,11 @@ Data Items
     <tbody>
         <tr>
             <td align="center">Block mode (MODE)</td>
-            <td align="left"></td>
+            <td align="left">It is the information that represents the control state and the output state of a function block. The different types of function blocks have different kinds of operation mode. In general there are 9 kinds of basic block mode, and some other block modes that are the composition of those basic block modes. The 9 basic block modes are: (O/S, IMAN, TRK, MAN, AUT, CAS, PRD, RCAS and ROUT).</td>
         </tr>
         <tr>
             <td align="center">Block status (BSTS)</td>
-            <td align="left"></td>
+            <td align="left">The operating state of a function block may be monitored via block status. Some function blocks do not have any block status. Example of block status for Timer Block (TM) are as follows: PAUS, PALM, CTUP, NR, RUN and STOP.</td>
         </tr>      
 	<tr>
             <td align="center">Alarm status (ALRM)</td>
