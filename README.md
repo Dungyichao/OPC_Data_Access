@@ -321,6 +321,40 @@ Function block is a big topic, so we will talk about it in section 3.4.
 <img src="/image/Function_block_overview.JPG" height="80%" width="80%"> 
 </p> 
 
+Data Items 
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Data Item</th>
+            <th align="center">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Block mode (MODE)</td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="center">Block status (BSTS)</td>
+            <td align="left"></td>
+        </tr>      
+	<tr>
+            <td align="center">Alarm status (ALRM)</td>
+            <td align="left"></td>
+        </tr>   
+	<tr>
+            <td align="center">Process variable (PV)</td>
+            <td align="left"></td>
+        </tr>
+	<tr>
+            <td align="center">Manipulated output value (MV)</td>
+            <td align="left"></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+
 Processing Functions
 <p align="center">
 <table>
