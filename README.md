@@ -337,7 +337,7 @@ Main data itmes are as follows: Block mode, Block status, Alarm status, Data sta
             <td align="center">Block mode (MODE)</td>
             <td align="left">It is the information that represents the control state and the output state of a function block. The different types of function blocks have different kinds of operation mode. In general there are 9 kinds of basic block mode, and some other block modes that are the composition of those basic block modes. 
 		<p align="center">
-		<img src="/image/block_mode.jpg" height="70%" width="70%"> 
+		<img src="/image/block_mode.jpg" height="100%" width="100%"> 
 		</p> 
 		</td>
         </tr>
