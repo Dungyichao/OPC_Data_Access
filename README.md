@@ -345,11 +345,14 @@ Data Items
         </tr>      
 	<tr>
             <td align="center">Alarm status (ALRM)</td>
-            <td align="left">The process alarm may be monitored and managed via alarm statuses of data items.  Some function blocks do not have any alarm status. Alarm status such as NR (Normal), HH (High high alarm), LL (Low low alarm), HI (High alarm), LO (Low alarm).</td>
+            <td align="left">The process alarm may be monitored and managed via alarm statuses of data items.  Some function blocks do not have any alarm status. When multiple alarms are occurring, the alarm status with the highest alarm display priority will be displayed. The alarm status is NR if no alarm occurs. The other alarm status and their priority are as following: </br>
+	    IOP(High Input Open Alarm) > IOP-(Low Input Open Alarm) > HH(High high alarm) > LL(Low low alarm) > HI(High alarm) > LO(Low alarm) > VEL+(Velocity Alarm +) > VEL-(Velocity Alarm -) > CNF(Connection Failure Alarm) > CERR(Computation Error Alarm) 
+		</td>
         </tr>   
 	<tr>
             <td align="center">Data status</td>
-            <td align="left"></td>
+            <td align="left">A data status is the information that represents the reliability of data. For the data obtained from I/O module, their status pass from one function block to another. Data status is observed when various exceptional events occurred due to abnormality in the process or calculation. Status such as BAD (normal data cannot be obtained), QST (data cannot be determined whether normal or bad)
+</td>
         </tr>
 	<tr>
             <td align="center">Process variable (PV)</td>
