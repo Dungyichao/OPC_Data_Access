@@ -348,9 +348,17 @@ Data Items
             <td align="left">The process alarm may be monitored and managed via alarm statuses of data items.  Some function blocks do not have any alarm status. Alarm status such as NR (Normal), HH (High high alarm), LL (Low low alarm), HI (High alarm), LO (Low alarm).</td>
         </tr>   
 	<tr>
+            <td align="center">Data status</td>
+            <td align="left"></td>
+        </tr>
+	<tr>
             <td align="center">Process variable (PV)</td>
             <td align="left"></td>
         </tr>
+	<tr>
+            <td align="center">Setpoint value(SV)</td>
+            <td align="left"></td>
+        </tr>    
 	<tr>
             <td align="center">Manipulated output value (MV)</td>
             <td align="left"></td>
