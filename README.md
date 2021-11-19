@@ -345,11 +345,7 @@ Data Items
         </tr>      
 	<tr>
             <td align="center">Alarm status (ALRM)</td>
-            <td align="left">The process alarm may be monitored and managed via alarm statuses of data items.  Some function blocks do not have any alarm status. Alarm status such as NR (Normal), HH (High high alarm), LL (Low low alarm), HI (High alarm), LO (Low alarm).
-		
-		
-		
-		</td>
+            <td align="left">The process alarm may be monitored and managed via alarm statuses of data items.  Some function blocks do not have any alarm status. Alarm status such as NR (Normal), HH (High high alarm), LL (Low low alarm), HI (High alarm), LO (Low alarm).</td>
         </tr>   
 	<tr>
             <td align="center">Process variable (PV)</td>
