@@ -322,6 +322,7 @@ Function block is a big topic, so we will talk about it in section 3.4.
 </p> 
 
 Data Items 
+
 Main data itmes are as follows: Block mode, Block status, Alarm status, Data status, Process variable (PV), Setpoint value(SV), Manipulated output value (MV). We will explain the first four item while the rest have been explained in section 2.2. 
 <p align="center">
 <table>
