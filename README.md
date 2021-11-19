@@ -339,7 +339,7 @@ Data Items
             <td align="center">Block status (BSTS)</td>
             <td align="left">Block status is the information that represents the operating state of a function block. Block status and block mode simultaneously reflect an overall operation state of a function block. The different type of function blocks have different kinds of block status. Some function blocks do not have any block status. A function block may check itself and display the result via block status. The block status is categorized by priority levels.
 		<p align="center">
-		<img src="/image/block_status_level.jpg" height="50%" width="50%"> 
+		<img src="/image/block_status_level.jpg" height="65%" width="65%"> 
 		</p> 
  Example of block status for Timer Block (TM) are as follows: PAUS, PALM, CTUP, NR, RUN and STOP.</td>
         </tr>      
