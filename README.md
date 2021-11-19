@@ -322,6 +322,7 @@ Function block is a big topic, so we will talk about it in section 3.4.
 </p> 
 
 Data Items 
+Main data itmes are as follows: Block mode, Block status, Alarm status, Data status, Process variable (PV), Setpoint value(SV), Manipulated output value (MV). We will explain the first four item while the rest have been explained in section 2.2. 
 <p align="center">
 <table>
     <thead>
@@ -346,26 +347,17 @@ Data Items
 	<tr>
             <td align="center">Alarm status (ALRM)</td>
             <td align="left">The process alarm may be monitored and managed via alarm statuses of data items.  Some function blocks do not have any alarm status. When multiple alarms are occurring, the alarm status with the highest alarm display priority will be displayed. The alarm status is NR if no alarm occurs. The other alarm status and their priority are as following: </br>
-	    IOP(High Input Open Alarm) > IOP-(Low Input Open Alarm) > HH(High high alarm) > LL(Low low alarm) > HI(High alarm) > LO(Low alarm) > VEL+(Velocity Alarm +) > VEL-(Velocity Alarm -) > CNF(Connection Failure Alarm) > CERR(Computation Error Alarm) 
-		</td>
+	    IOP > IOP- > HH > LL > HI > LO > VEL+ > VEL- > CNF > CERR 
+	    	<p align="center">
+		<img src="/image/block_alarm_status.jpg" height="65%" width="65%"> 
+		</p> 
+	    </td>
         </tr>   
 	<tr>
             <td align="center">Data status</td>
             <td align="left">A data status is the information that represents the reliability of data. For the data obtained from I/O module, their status pass from one function block to another. Data status is observed when various exceptional events occurred due to abnormality in the process or calculation. Status such as BAD (normal data cannot be obtained), QST (data cannot be determined whether normal or bad)
 </td>
-        </tr>
-	<tr>
-            <td align="center">Process variable (PV)</td>
-            <td align="left"></td>
-        </tr>
-	<tr>
-            <td align="center">Setpoint value(SV)</td>
-            <td align="left"></td>
-        </tr>    
-	<tr>
-            <td align="center">Manipulated output value (MV)</td>
-            <td align="left"></td>
-        </tr>
+        </tr>	
     </tbody>
 </table>
 </p>
