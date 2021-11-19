@@ -341,7 +341,7 @@ Main data itmes are as follows: Block mode, Block status, Alarm status, Data sta
             <td align="center">Block status (BSTS)</td>
             <td align="left">Block status is the information that represents the operating state of a function block. Block status and block mode simultaneously reflect an overall operation state of a function block. The different type of function blocks have different kinds of block status. Some function blocks do not have any block status. A function block may check itself and display the result via block status. The block status is categorized by priority levels.
 		<p align="center">
-		<img src="/image/block_status_level.jpg" height="65%" width="65%"> 
+		<img src="/image/block_status_level.jpg" height="70%" width="70%"> 
 		</p> 
  Example of block status for Timer Block (TM) are as follows: PAUS, PALM, CTUP, NR, RUN and STOP.</td>
         </tr>      
@@ -350,7 +350,7 @@ Main data itmes are as follows: Block mode, Block status, Alarm status, Data sta
             <td align="left">The process alarm may be monitored and managed via alarm statuses of data items.  Some function blocks do not have any alarm status. When multiple alarms are occurring, the alarm status with the highest alarm display priority will be displayed. The alarm status is NR if no alarm occurs. The other alarm status and their priority are as following: </br>
 	    IOP > IOP- > HH > LL > HI > LO > VEL+ > VEL- > CNF > CERR 
 	    	<p align="center">
-		<img src="/image/block_alarm_status.jpg" height="65%" width="65%"> 
+		<img src="/image/block_alarm_status.jpg" height="70%" width="70%"> 
 		</p> 
 	    </td>
         </tr>   
