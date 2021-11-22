@@ -321,7 +321,9 @@ Function block is a big topic, so we will talk about it in section 3.4.
 <img src="/image/Function_block_overview.JPG" height="80%" width="80%"> 
 </p> 
 
-Data Items 
+#### 3.3.5.1 I/O Connection
+
+#### 3.3.5.2 Data Items 
 
 Main data itmes are as follows: Block mode, Block status, Alarm status, Data status, Process variable (PV), Setpoint value(SV), Manipulated output value (MV). We will explain the first four item while the rest have been explained in section 2.2. 
 <p align="center">
@@ -367,7 +369,7 @@ Main data itmes are as follows: Block mode, Block status, Alarm status, Data sta
 </table>
 </p>
 
-Processing Functions
+#### 3.3.5.3 Processing Functions
 <p align="center">
 <table>
     <thead>
