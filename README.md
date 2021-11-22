@@ -322,6 +322,63 @@ Function block is a big topic, so we will talk about it in section 3.4.
 </p> 
 
 #### 3.3.5.1 I/O Connection
+By performing the I/O connection, data can be exchanged between a function block and the connection destination according to the connection method.
+
+Connection Destination 
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Connection Destination</th>
+            <th align="center">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Process I/O</td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="center">Software I/O</td>
+            <td align="left"></td>
+        </tr>
+	<tr>
+            <td align="center">Communication I/O and Expanded Communication I/O</td>
+            <td align="left"></td>
+        </tr>
+	<tr>
+            <td align="center">Fieldbus I/O</td>
+            <td align="left"></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+
+Connection Methods
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Connection Methods</th>
+            <th align="center">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Data Connection</td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="center">Terminal Connection</td>
+            <td align="left"></td>
+        </tr>
+	<tr>
+            <td align="center">Sequence Connection</td>
+            <td align="left"></td>
+        </tr>
+    </tbody>
+</table>
+</p>
 
 #### 3.3.5.2 Data Items 
 
