@@ -370,7 +370,7 @@ Connection Methods
     <tbody>
         <tr>
             <td align="center">Data Connection</td>
-            <td align="left">This is the I/O connection method used for reading and setting data with respect to the process I/O, software I/O, communication I/O and expanded communication I/O, fieldbus I/O or other function blocks.</td>
+            <td align="left">This is the I/O connection method used for reading and setting data with respect to the process I/O, software I/O, communication I/O and expanded communication I/O, fieldbus I/O or other function blocks. It is used when exchanging data values and data status between a function block and the data item of the element specified as the connection destination.</td>
         </tr>
         <tr>
             <td align="center">Terminal Connection</td>
