@@ -370,15 +370,15 @@ Connection Methods
     <tbody>
         <tr>
             <td align="center">Data Connection</td>
-            <td align="left"></td>
+            <td align="left">This is the I/O connection method used for reading and setting data with respect to the process I/O, software I/O, communication I/O and expanded communication I/O, fieldbus I/O or other function blocks.</td>
         </tr>
         <tr>
             <td align="center">Terminal Connection</td>
-            <td align="left"></td>
+            <td align="left">This is the I/O connection method used when connecting between cascade control function blocks or connecting function blocks via a selector switch block (SW-33, SW-91). Data is exchanged between the terminals of two function blocks.</td>
         </tr>
 	<tr>
             <td align="center">Sequence Connection</td>
-            <td align="left"></td>
+            <td align="left">This is the I/O connection method used for testing whether or not the connection destination data used by the sequence control satisfies the conditional expression, or for changing block mode, alarm status, data, etc. of the connection destination.</td>
         </tr>
     </tbody>
 </table>
