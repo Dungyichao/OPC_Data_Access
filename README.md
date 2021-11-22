@@ -242,11 +242,7 @@ In the following image, you can see the folder tree which represents the hierarc
 </p> 
 You can have multiple project folders under system view (red line). Under each project (blue line), you can have multiple FCS and HIS. Under each FCS (green line), you can see IOM folder and FUNCTION_BLOCK folder. Under IOM folder, you can have multiple Node, and each node can contain multiple but limited quantity I/O Module (Analog, Digital, Analog/Digital). Each I/O module contains multiple terminal (physically call channel). There are limited items under FUNCTION_BLOCK folder. In each HIS folder, there is a WINDOW folder, and there are multiple Graphic and Trend folders in the WINDOW folder.
 
-### 3.3.1 FCS and FCU
-
-
-
-### 3.3.2 Node and I/O Modules
+### 3.3.1 Node and I/O Modules
 Input/Output (I/O) and communication modules are mounted on Node unit (NU). And NU transmits those module data to FCS. Some module can handle analog I/O, some can hanle digital I/O, while some can handle both analog and digital I/O. Please refer to [Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf) page 2-9 to see different model of module and their capability. Different node unit can hold different limited amount of I/O module.
 
 Let's say we have a model AAB841 I/O module ([Reference_1_1_1](https://web-material3.yokogawa.com/TI33K01A12-50E.pdf) page 2-9). It is an analog I/O module with 8 channel input and 8 channel output, 1 to 5 V Input, 4 to 20 mA Output. When you add the node module model in the FCS, you will be able to see the terminals (channel) of the I/O module by double click on the node I/O module (shown in the following imgae), 8 terminal for input and the other 8 for output. You can use the Terminal number (such as %Z033101) in function blocks.
@@ -256,7 +252,7 @@ Let's say we have a model AAB841 I/O module ([Reference_1_1_1](https://web-mater
 
 For tag name and label, the setting items may vary, depending on Type. For analog I/O, only user-defined label can be set. Tag name cannot be set. For digital I/O, tag name or user-defined label can be set. 
 
-### 3.3.3 Switch
+### 3.3.2 Switch
 You can find common switches and global switch when you click on SWITCH folder. 
 
 <p align="center">
@@ -284,7 +280,7 @@ You can find common switches and global switch when you click on SWITCH folder.
 <img src="/image/project_switch.JPG" height="50%" width="50%"> 
 </p> 
 
-### 3.3.4 Message
+### 3.3.3 Message
 
 <p align="center">
 <img src="/image/project_message_detail.jpg" height="90%" width="90%"> 
@@ -315,13 +311,13 @@ You can find common switches and global switch when you click on SWITCH folder.
 </table>
 </p>
 
-### 3.3.5 Control Function
+### 3.3.4 Control Function
 Function block is a big topic, so we will talk about it in section 3.4.
 <p align="center">
 <img src="/image/Function_block_overview.JPG" height="80%" width="80%"> 
 </p> 
 
-#### 3.3.5.1 I/O Connection
+#### 3.3.4.1 I/O Connection
 By performing the I/O connection, data can be exchanged between a function block and the connection destination according to the connection method.
 
 Connection Destination 
@@ -390,7 +386,7 @@ Connection Methods
 </table>
 </p>
 
-#### 3.3.5.2 Data Items 
+#### 3.3.4.2 Data Items 
 
 Main data itmes are as follows: Block mode, Block status, Alarm status, Data status, Process variable (PV), Setpoint value(SV), Manipulated output value (MV). We will explain the first four item while the rest have been explained in section 2.2. 
 <p align="center">
@@ -436,7 +432,7 @@ Main data itmes are as follows: Block mode, Block status, Alarm status, Data sta
 </table>
 </p>
 
-#### 3.3.5.3 Processing Functions
+#### 3.3.4.3 Processing Functions
 <p align="center">
 <table>
     <thead>
@@ -466,7 +462,7 @@ Main data itmes are as follows: Block mode, Block status, Alarm status, Data sta
 </table>
 </p>
 
-### 3.3.6 Graphic and Trend
+### 3.3.5 Graphic and Trend
 
 ## 3.4 Function Block
 
