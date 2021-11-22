@@ -371,8 +371,8 @@ Connection Methods
         <tr>
             <td align="center">Data Connection</td>
             <td align="left">This is the I/O connection method used for reading and setting data with respect to the process I/O, software I/O, communication I/O and expanded communication I/O, fieldbus I/O or other function blocks. It is used when exchanging data values and data status between a function block and the data item of the element specified as the connection destination. </br></br>
-	    Data reference: reading data from the connection destination of the function block’s input terminal.</br>
-	    Data setting: writing data into the connection destination from the function block's output terminal.
+	    <b>Data reference</b>: reading data from the connection destination of the function block’s input terminal.</br>
+	    <b>Data setting</b>: writing data into the connection destination from the function block's output terminal.
 	    <p align="center">
 		<img src="/image/Data_connection.jpg" height="100%" width="100%"> 
 	    </p> 
