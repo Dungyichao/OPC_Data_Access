@@ -370,11 +370,14 @@ Connection Methods
     <tbody>
         <tr>
             <td align="center">Data Connection</td>
-            <td align="left">This is the I/O connection method used for reading and setting data with respect to the process I/O, software I/O, communication I/O and expanded communication I/O, fieldbus I/O or other function blocks. It is used when exchanging data values and data status between a function block and the data item of the element specified as the connection destination.</td>
+            <td align="left">This is the I/O connection method used for reading and setting data with respect to the process I/O, software I/O, communication I/O and expanded communication I/O, fieldbus I/O or other function blocks. It is used when exchanging data values and data status between a function block and the data item of the element specified as the connection destination. </br></br>
+	    Data reference: reading data from the connection destination of the function block’s input terminal.
+	    Data setting: writing data into the connection destination from the function block's output terminal.
+	    </td>
         </tr>
         <tr>
             <td align="center">Terminal Connection</td>
-            <td align="left">This is the I/O connection method used when connecting between cascade control function blocks or connecting function blocks via a selector switch block (SW-33, SW-91). Data is exchanged between the terminals of two function blocks.</td>
+            <td align="left">This is the I/O connection method used when connecting between cascade control function blocks or connecting function blocks via a selector switch block. Data is exchanged between the terminals of two function blocks.</td>
         </tr>
 	<tr>
             <td align="center">Sequence Connection</td>
