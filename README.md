@@ -336,19 +336,23 @@ Connection Destination
     <tbody>
         <tr>
             <td align="center">Process I/O</td>
-            <td align="left"></td>
+            <td align="left">Analog I/O, Contact I/O</td>
         </tr>
         <tr>
             <td align="center">Software I/O</td>
-            <td align="left"></td>
+            <td align="left">Internal switch (common switch), Message output</td>
         </tr>
 	<tr>
             <td align="center">Communication I/O and Expanded Communication I/O</td>
-            <td align="left"></td>
+            <td align="left">Word data, Bit data</td>
         </tr>
 	<tr>
             <td align="center">Fieldbus I/O</td>
-            <td align="left"></td>
+            <td align="left">Parameter of fieldbus block.</td>
+        </tr>
+	<tr>
+            <td align="center">Other Function Blocks</td>
+            <td align="left">Data items of other function blocks, I/O terminals of other function blocks</td>
         </tr>
     </tbody>
 </table>
