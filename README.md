@@ -432,7 +432,7 @@ Main data itmes are as follows: Block mode, Block status, Alarm status, Data sta
 </table>
 </p>
 
-#### 3.3.4.3 Processing Functions
+#### 3.3.4.3 Processing Functions of Function Block
 <p align="center">
 <table>
     <thead>
