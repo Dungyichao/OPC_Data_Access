@@ -497,9 +497,16 @@ The input signal conversion is the function that converts the input signal read 
             <td align="center">Weight-Totalizing Batch Set Block (BSETU-3)</td>
             <td align="left">•Weight Measurement Conversion</br>•SUM Conversion</br>•ΔSUM Conversion</td>
         </tr>
+	<tr>
+            <td align="center">Pulse Count Input Block (PTC)</td>
+            <td align="left">Input Signal Conversion for PTC Block</td>
+        </tr>
     </tbody>
 </table>
 </p>
+
+#### 3.4.1.2 Digital Filter
+
 
 # 4. How We Collect - OPC Data Access
 OPC server will be the one to ask data from each FCS on behalf of us. We will now explain how to write program as OPC client to ask OPC server to retrieve data. ([Link](https://www.programmersought.com/article/51263918194/), [Reference_4_0_1](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_0_1_C%23%20uses%20DA%20and%20UA%20to%20access%20PLC%20through%20KepServer%20-%20Programmer%20Sought.pdf)), ([Link](https://blog.csdn.net/cuoban/article/details/106130764), [Reference_4_0_2](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_0_2_C%23%20OPC%20PLC%20Communication%20Example.pdf))
