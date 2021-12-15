@@ -462,9 +462,44 @@ Main data itmes are as follows: Block mode, Block status, Alarm status, Data sta
 </table>
 </p>
 
+More detail content will be showed in section 3.4
+
 ### 3.3.5 Graphic and Trend
 
 ## 3.4 Function Block
+
+### 3.4.1 Input Processing
+#### 3.4.1.1 Input Signal Conversion
+The input signal conversion is the function that converts the input signal read from the input module or other function blocks into process variable (PV) or calculated input value (RV) according to the signal type.
+
+<p align="center">
+<table>
+    <thead>
+        <tr>
+            <th align="center">Function Block</th>
+            <th align="center">Type of Input Signal Conversion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Regulatory Control Blocks and Calculation Blocks</td>
+	    <td align="left">•No Conversion </br> •Square Root </br> •Pulse-train/ Control Priority Type Pulse Train Input/ Exact Totalization Pulse Train Input </br> •Communications</td>
+        </tr>
+        <tr>
+            <td align="center">Logic Operation Blocks</td>
+            <td align="left">•Bitwise Logic Operation Blocks, Logic Operation Blocks other than Relational Operation Blocks </br>•Bitwise Logic Operation Blocks</br>•Relational Operation Blocks</td>
+        </tr>      
+	<tr>
+            <td align="center">Motor Control Blocks (MC-2, MC-2E, MC-3, and MC-3E)</td>
+            <td align="left">•Feedback Input Signal Conversion</br>•Answerback Input Signal Conversion</br>•Feedback Input to Answerback Input Conversion</td>
+        </tr>   
+	<tr>
+            <td align="center">Weight-Totalizing Batch Set Block (BSETU-3)</td>
+            <td align="left">•Weight Measurement Conversion</br>•SUM Conversion</br>•ΔSUM Conversion</td>
+        </tr>
+    </tbody>
+</table>
+</p>
 
 # 4. How We Collect - OPC Data Access
 OPC server will be the one to ask data from each FCS on behalf of us. We will now explain how to write program as OPC client to ask OPC server to retrieve data. ([Link](https://www.programmersought.com/article/51263918194/), [Reference_4_0_1](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_0_1_C%23%20uses%20DA%20and%20UA%20to%20access%20PLC%20through%20KepServer%20-%20Programmer%20Sought.pdf)), ([Link](https://blog.csdn.net/cuoban/article/details/106130764), [Reference_4_0_2](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_0_2_C%23%20OPC%20PLC%20Communication%20Example.pdf))
