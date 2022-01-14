@@ -20,6 +20,7 @@ This is a tutorial of showing how to collect data from OPC server which connecte
 	* 4.3 [Make Console Application to Service](https://github.com/Dungyichao/OPC_Data_Access#43-make-console-application-to-service) (optional)
 		* 4.3.1 [Convert the App](https://github.com/Dungyichao/OPC_Data_Access#431-convert-the-app)
 		* 4.3.2 [Register and run the service](https://github.com/Dungyichao/OPC_Data_Access#432-register-and-run-the-service)	
+	* 4.4 DCS Alarm
 
 
 # 1. Introduction <br />
@@ -835,4 +836,8 @@ and press enter. You should see
 
 Finally, go to Services. Right click on Service Name you created in the the solution, click “Start”.
 
-
+## 4.4 DCS Alarm
+You can use some parsing program to read from the following alarm history in the following location 
+<p align="center">
+<img src="/image/Alarm_history.jpg" height="60%" width="60%"> 
+</p> 
