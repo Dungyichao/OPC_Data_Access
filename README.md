@@ -839,5 +839,5 @@ Finally, go to Services. Right click on Service Name you created in the the solu
 ## 4.4 DCS Alarm
 You can use some parsing program to read from the following alarm history in the following location 
 <p align="center">
-<img src="/image/Alarm_history.jpg" height="60%" width="60%"> 
+<img src="/image/Alarm_history.JPG" height="60%" width="60%"> 
 </p> 
