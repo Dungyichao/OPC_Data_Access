@@ -20,7 +20,7 @@ This is a tutorial of showing how to collect data from OPC server which connecte
 	* 4.3 [Make Console Application to Service](https://github.com/Dungyichao/OPC_Data_Access#43-make-console-application-to-service) (optional)
 		* 4.3.1 [Convert the App](https://github.com/Dungyichao/OPC_Data_Access#431-convert-the-app)
 		* 4.3.2 [Register and run the service](https://github.com/Dungyichao/OPC_Data_Access#432-register-and-run-the-service)	
-	* 4.4 DCS Alarm
+	* 4.4 [DCS Alarm](https://github.com/Dungyichao/OPC_Data_Access/blob/main/README.md#44-dcs-alarm)
 
 
 # 1. Introduction <br />
