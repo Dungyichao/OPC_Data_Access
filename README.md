@@ -687,8 +687,21 @@ static int InsertData_IP_String(DataTable dt, Array values, Array Quality, strin
                     }
                     else
                     {
-                        string error_string_log = string.Format("TagName: {0} Quality is bad, cannot read value. Quality Code: {1}", dt.Rows[i]["TagName"].ToString(), Code.ToString());
-                        Console.WriteLine(error_string_log);
+                        string tagvalue = " ";
+                                if (values.GetValue(i + 1) != null)
+                                {
+                                    tagvalue = values.GetValue(i + 1).ToString();
+                                    Mycomm2.Parameters.Clear();
+                                    Mycomm2.Parameters.AddWithValue("@tagname", new_tagname);
+                                    Mycomm2.Parameters.AddWithValue("@tagvalue", values.GetValue(i + 1).ToString());
+                                    Mycomm2.Parameters.AddWithValue("@tagtime", currentTime);
+                                    Mycomm2.ExecuteNonQuery();
+                                }
+                                
+                                
+                                string error_string_log = string.Format("TagName: {0} Quality is bad, read value: {2}. Quality Code: {1} >>>>>>>", dt.Rows[i]["TagName"].ToString(), Code.ToString(), tagvalue);
+                                Console.WriteLine(error_string_log);
+                                log_string_file(error_string_log);
                     }
                 }
                 else
