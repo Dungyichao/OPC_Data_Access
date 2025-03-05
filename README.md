@@ -527,6 +527,18 @@ Create a C# Console Application. Make sure you have the dynamic library which ve
 <img src="/image/csharp_reference_opcda.JPG" height="80%" width="80%"> 
 </p> 
 
+### 4.2.1 Read Data
+
+Some Parameters
+```C#
+//make some log
+const string path = @"C:\Yokogawa_OPC_Online";
+static string System_name = "SiloCheck";
+//static string KEPServerIP = "localhost";
+static string KEPServerIP = "172.17.2.50";
+static string KEPServerVersion = "Yokogawa.ExaopcDACS1.1";
+```
+
 ```C#
 using OPCAutomation;
 
@@ -766,6 +778,125 @@ static void KepGroup_DataChange(int TransactionID, int NumItems, ref Array Clien
     }
 }
 ```
+
+### 4.2.2 Write Data
+If you want to write data into OPC, you need to first Read the tag, and then Write to the tag. In the following example, we only write one value into one tag
+
+Function
+```C#
+static void OPC_Write_Function(string write_val, string write_tag)
+{
+    int NumItem = 1;
+    string[] TagWholeName = new string[1000];
+    int[] TagWholeValue = new int[1000];
+    int[] TagCHandles = new int[1000];
+    object[] tmpwtData = new object[1000];
+
+
+    DataTable ReadTagNameTable = new DataTable();
+    ReadTagNameTable.Columns.Add(new DataColumn("TagName", typeof(string)));
+
+    DataTable ValueTagNameTable = new DataTable();
+    ValueTagNameTable.Columns.Add(new DataColumn("TagValue", typeof(string)));
+
+    DataRow dr_new = ReadTagNameTable.NewRow();
+    dr_new["TagName"] = write_tag;
+    ReadTagNameTable.Rows.Add(dr_new);
+
+    DataRow dr_value_new = ValueTagNameTable.NewRow();
+    dr_value_new["TagValue"] = write_val;
+    ValueTagNameTable.Rows.Add(dr_value_new);
+
+    NumItem = ReadTagNameTable.Rows.Count;
+
+    for (int j = 1; j <= NumItem; j++)
+    {
+        TagWholeName[j] = ReadTagNameTable.Rows[j - 1]["TagName"].ToString();
+
+        TagWholeValue[j] = Convert.ToInt32(ValueTagNameTable.Rows[j - 1]["TagValue"].ToString());
+        tmpwtData[j] = (object)ValueTagNameTable.Rows[j - 1]["TagValue"].ToString();
+
+        TagCHandles[j] = j;
+    }
+
+    log_string_file("Connecting to OPC");
+    OPCServer _OPCServer = new OPCServer();
+
+    _OPCServer.Connect(KEPServerVersion, KEPServerIP);
+    _OPCServer.Logon("enguser", "");
+
+
+    OPCGroups groups;
+    OPCGroup group;
+    OPCItems items;
+    OPCItem item;
+    Array strItemIDs;
+    Array lClientHandles;
+    Array lWriteValue;
+    Array IWriteValueObj;
+    Array lserverhandles;
+    Array lErrors;
+    object RequestedDataTypes = null;
+    object AccessPaths = null;
+
+
+    groups = _OPCServer.OPCGroups;
+    groups.DefaultGroupIsActive = true; //Set the group collection to be active by default
+    groups.DefaultGroupDeadband = 0; //Set dead zone
+    groups.DefaultGroupUpdateRate = 200;//Set the update frequency
+
+
+    group = groups.Add(null);
+    group.IsActive = true;
+    //group.IsSubscribed = true; //subscribe
+    group.UpdateRate = 200;    //Update refresh frequency
+    _OPCServer.OPCGroups.DefaultGroupDeadband = 0;
+
+    group.AsyncWriteComplete += new DIOPCGroupEvent_AsyncWriteCompleteEventHandler(AsyncWriteComplete);
+    group.DataChange += new DIOPCGroupEvent_DataChangeEventHandler(KepGroup_DataChange);
+
+    items = group.OPCItems;
+
+
+    lWriteValue = (Array)TagWholeValue;
+    IWriteValueObj = (Array)tmpwtData;
+    strItemIDs = (Array)TagWholeName;
+    lClientHandles = (Array)TagCHandles;
+    items.AddItems(NumItem, ref strItemIDs, ref lClientHandles, out lserverhandles, out lErrors, RequestedDataTypes, AccessPaths);
+
+
+    string currentTime_mm = String.Empty;
+    int mm = 0;
+    bool mm_result = false;
+    object qualities = new object(); //opc server will store the quality of the item 
+    object timestamps = new object(); //store the timestamp of the read
+
+
+    Array values; //opc server will store the values in this array
+    Array errors; //opc server will store any errors in this array
+
+    //Array serverhandles;
+    Array lErrors_wt;
+    group.SyncRead((short)OPCDataSource.OPCDevice, NumItem, ref lserverhandles, out values, out errors, out qualities, out timestamps);
+
+    int[] tmpSerHdles = new int[3];
+    tmpSerHdles[1] = Convert.ToInt32(lserverhandles.GetValue(1));
+    Array SerHandles = (Array)tmpSerHdles;
+
+    group.SyncWrite(NumItem, ref SerHandles, ref IWriteValueObj, out lErrors_wt);
+
+    groups.RemoveAll();
+    _OPCServer.Disconnect();
+}
+```
+Function
+```C#
+static void AsyncWriteComplete(int TransactionID, int NumItems, ref Array ClientHandles, ref Array Errors)
+{
+    //MessageBox.Show("Success");
+}
+```
+
 
 ## 4.3 Make Console Application to Service
 This step is optional. ([Link](https://stackoverflow.com/questions/7764088/net-console-application-as-windows-service), [Reference_4_3_1](https://github.com/Dungyichao/OPC_Data_Access/blob/main/Documents/Reference_4_3_1_c%23%20-%20.NET%20console%20application%20as%20Windows%20service%20-%20Stack%20Overflow.pdf))
